@@ -23,7 +23,7 @@ enableSentences false;
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea = 2500; // Default = 1500
 
-MaxVehicleLimit = 400; // Default = 50
+MaxVehicleLimit = 100; // Default = 50
 MaxDynamicDebris = 700; // Default = 100
 dayz_MapArea = 20000; // Default = 10000
 
@@ -46,6 +46,14 @@ DynamicVehicleDamageHigh = 100; // Default: 100
 
 DZE_BuildOnRoads = false; // Default: False
 
+//### BEGIN MODIFIED CODE: config
+	DZE_SelfTransfuse = true;
+	DZE_PlayerZed = false;
+	DZE_StaticConstructionCount = 1;
+	DefaultWeapons = ["Makarov","ItemFlashlight","ItemToolbox","ItemMap"];
+	DefaultMagazines = ["8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemBandage","ItemBandage","ItemPainkiller"];
+//### END MODIFIED CODE: config
+
 // DZEdebug = true;
 
 //Load in compiled functions
@@ -56,6 +64,12 @@ progressLoadingScreen 0.2;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functions_med.sqf";	//Functions used by CLIENT for medical
 progressLoadingScreen 0.4;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";				//Compile regular functions
+//### BEGIN MODIFIED CODE: addons 
+// snap build
+call compile preprocessFileLineNumbers "custom\compiles.sqf";
+// deployable bike
+call compile preprocessFileLineNumbers "addons\bike\init.sqf";
+//### END MODIFIED CODE: addons 
 progressLoadingScreen 0.5;
 call compile preprocessFileLineNumbers "server_traders.sqf";				//Compile trader configs
 progressLoadingScreen 1.0;
@@ -79,16 +93,33 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";	
-	
-	
-	//anti Hack
-	[] execVM "\z\addons\dayz_code\system\antihack.sqf";
 
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 };
-#include "\z\addons\dayz_code\system\REsec.sqf"
+
 //Start Dynamic Weather
 execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
+
+//### BEGIN MODIFIED CODE: addons 
+
+// suicide
+call compile preprocessFileLineNumbers "addons\suicide\init.sqf";
+
+// take clothes
+call compile preprocessFileLineNumbers "addons\takeclothes\init.sqf";
+
+// weapon mod
+call compile preprocessFileLineNumbers "addons\wmod\init.sqf";
+
+//### mods maintained by other people >>
+
+// safe zones
+call compile preprocessFileLineNumbers "addons\safezones\init.sqf";
+
+// service point
+if(!isServer) then {execVM "addons\service_point\service_point.sqf";};
+
+//### END MODIFIED CODE: addons

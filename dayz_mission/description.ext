@@ -148,3 +148,7 @@ class DayZ_loadingScreen
 		};
 	};
 };
+
+//### BEGIN MODIFIED CODE: addons
+#include "custom\snap_pro\snappoints.hpp"
+//### BEGIN MODIFIED CODE: addons

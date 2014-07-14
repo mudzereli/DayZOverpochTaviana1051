@@ -378,7 +378,10 @@ if (isServer && isNil "sm_done") then {
 		
 		endLoadingScreen;
 	};
-
+	
+	//### BEGIN MODIFIED CODE: dzms
+	[] ExecVM "\z\addons\dayz_server\DZMS\DZMSInit.sqf";
+	//### end MODIFIED CODE: dzms
 	allowConnection = true;	
 	sm_done = true;
 	publicVariable "sm_done";
