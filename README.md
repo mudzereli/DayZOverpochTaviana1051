@@ -18,28 +18,30 @@ Customized Server Files for DayZ Overpoch Taviana
 * vehicle service points        (axecop)
 * DZMS missions                 (vampire)
 * fast trading                  (mudzereli)
-- towing                        (r3f)
+* towing                        (r3f)
 * self map marker with map/gps  (mudzereli)
 * self transfusion              (epoch)
+* disable weight/overburden     (epoch)
+* god mode bases                (epoch)
 
 ####Bug Fixes
 - delete unused parachutes
+- basic overwatch loot spawns added
 
 ####To Do
 - throttle in safe zones (needs programming)
-- bike deploy to scrap metal?
 - gem trading (could possibly use my deploy mod for this)
-- maintainence / indestructable bases (i think this is set up but need to double check everything)
+- maintainence (i think this is set up but need to double check everything)
 - single currency (needs lots of research/work)
-
-####Known Issues
-- towing not working properly (could be infistar)
 
 ####Change Log
 
 version | change
 --------|-------
 1.3.0   | force name tags in trader / force name tags off by default
+        | towing fix
+        | remove weight/burden
+        | overwatch loot spawns
 1.2.0   | infistar update
         | install towing mod (untested)
         | install fast trading mod

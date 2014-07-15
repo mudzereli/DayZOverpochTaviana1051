@@ -162,3 +162,7 @@ class RscTitles
 	#include "addons\R3F_ARTY_AND_LOG\desc_rsct_include.h"
 };
 //### END MODIFIED CODE: towing
+
+//### END MODIFIED CODE: loot
+#include "overwrites\loot\CfgBuildingLoot.hpp"
+//### END MODIFIED CODE: loot

@@ -41,7 +41,7 @@ DZE_DEPLOYABLES_CONFIG = [
     // deploy a mozzie in front of the player from a rotor/engine/fueltank
     ["ItemToolbox",[0,5,2],7,0.1,true,true,true,false,true,["CSJ_GyroC"],[],["PartVRotor","PartEngine","PartFueltank"]],
     //["ItemToolbox",[0,10,0],5,-1,false,true,true,true,false,["Land_Mil_Guardhouse"],[],["cinder_wall_kit","cinder_wall_kit","cinder_wall_kit","cinder_door_kit"]],
-    ["ItemCrowbar",[0,6,0],5,-1,false,true,true,true,false,["Land_Misc_Cargo1Ao","Land_Misc_Cargo1Bo"],[],["metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit"]],
+    ["ItemCrowbar",[0,6,0],5,-1,false,true,true,true,false,["Land_Misc_Cargo1Ao","Land_Misc_Cargo1Bo"],[],["metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit"]]
     //["ItemEtool",[0,8,0],5,-1,false,true,true,true,false,["Land_Fort_Watchtower"],[],["forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"]],
     //["ItemEtool",[0,8,0],5,-1,false,true,true,true,false,["Land_fortified_nest_big"],[],["ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"]],
     //["PartWoodPile",[0,2,0],5,1,true,true,true,true,false,["Pile_of_wood"],[],["PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile"]],

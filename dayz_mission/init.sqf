@@ -55,6 +55,9 @@ DZE_BuildOnRoads = false; // Default: False
 	DZE_ForceNameTagsOff = true;
 	DZE_ForceNameTagsInTrader = true;
 	DZE_BuildingLimit = 200;
+	DZE_R3F_WEIGHT = false;
+	DZE_GodModeBase = true;
+	DZE_MissionLootTable = true;
 //### END MODIFIED CODE: config
 
 // DZEdebug = true;

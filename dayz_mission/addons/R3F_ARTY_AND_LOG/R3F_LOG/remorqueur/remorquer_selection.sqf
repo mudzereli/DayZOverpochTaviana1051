@@ -27,7 +27,7 @@ else
 	{
 		if (isNull (_objet getVariable "R3F_LOG_est_transporte_par") && (isNull (_objet getVariable "R3F_LOG_est_deplace_par") || (!alive (_objet getVariable "R3F_LOG_est_deplace_par")))) then
 		{
-			if (_objet distance _remorqueur <= 20) then
+			if (_objet distance _remorqueur <= 30) then
 			{
              	//The vehicle that is driving.   
                 _tempobj = _remorqueur;		_countTransportedBy = 1;
@@ -60,7 +60,7 @@ else
 					// Attacher à l'arrière du véhicule au ras du sol
 					_objet attachTo [_remorqueur, [
 						0,
-						(boundingBox _remorqueur select 0 select 1) + (boundingBox _objet select 0 select 1) + 2.5,
+						(boundingBox _remorqueur select 0 select 1) + (boundingBox _objet select 0 select 1) + 3,
 						(boundingBox _remorqueur select 0 select 2) - (boundingBox _objet select 0 select 2)
 					]];
 					

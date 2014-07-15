@@ -31,7 +31,7 @@ if !(isServer && isDedicated) then
 {
 	// Le client attend que le serveur ai créé et publié la référence de l'objet servant de point d'attache
 	waitUntil {!isNil "R3F_LOG_PUBVAR_point_attache"};
-
+	
 	/** Indique quel objet le joueur est en train de déplacer, objNull si aucun */
 	R3F_LOG_joueur_deplace_objet = objNull;
 	
@@ -66,7 +66,7 @@ if !(isServer && isDedicated) then
 	// Liste des variables activant ou non les actions de menu
 	R3F_LOG_action_charger_deplace_valide = true;
 	R3F_LOG_action_charger_selection_valide = true;
-	R3F_LOG_action_contenu_vehicule_valide = false;
+	R3F_LOG_action_contenu_vehicule_valide = true;
 	
 	R3F_LOG_action_remorquer_deplace_valide = false;
 	R3F_LOG_action_remorquer_selection_valide = false;
