@@ -12,7 +12,9 @@ briefing = 0;
 debriefing = 0;
 
 onPauseScript = "";
-loadScreen = "\z\addons\dayz_code\gui\dayz_logo_ca.paa";
+//### BEGIN MODIFIED CODE: splash screen
+loadScreen = "overwrites\splash.jpg";
+//### END MODIFIED CODE: splash screen
 
 class Header
 {
@@ -149,6 +151,14 @@ class DayZ_loadingScreen
 	};
 };
 
-//### BEGIN MODIFIED CODE: addons
+//### BEGIN MODIFIED CODE: snap pro
 #include "custom\snap_pro\snappoints.hpp"
-//### BEGIN MODIFIED CODE: addons
+//### END MODIFIED CODE: snap pro
+
+//### BEGIN MODIFIED CODE: towing
+#include "addons\R3F_ARTY_AND_LOG\desc_include.h"
+class RscTitles
+{
+	#include "addons\R3F_ARTY_AND_LOG\desc_rsct_include.h"
+};
+//### END MODIFIED CODE: towing

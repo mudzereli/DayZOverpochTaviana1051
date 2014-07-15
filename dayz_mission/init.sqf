@@ -52,6 +52,9 @@ DZE_BuildOnRoads = false; // Default: False
 	DZE_StaticConstructionCount = 1;
 	DefaultWeapons = ["Makarov","ItemFlashlight","ItemToolbox","ItemMap"];
 	DefaultMagazines = ["8Rnd_9x18_Makarov","8Rnd_9x18_Makarov","ItemBandage","ItemBandage","ItemPainkiller"];
+	DZE_ForceNameTagsOff = true;
+	DZE_ForceNameTagsInTrader = true;
+	DZE_BuildingLimit = 200;
 //### END MODIFIED CODE: config
 
 // DZEdebug = true;
@@ -114,12 +117,21 @@ call compile preprocessFileLineNumbers "addons\takeclothes\init.sqf";
 // weapon mod
 call compile preprocessFileLineNumbers "addons\wmod\init.sqf";
 
+// fast trading
+call compile preprocessFileLineNumbers "overwrites\fast_trading\init.sqf";
+
 //### mods maintained by other people >>
 
 // safe zones
 call compile preprocessFileLineNumbers "addons\safezones\init.sqf";
 
+// delete unused parachutes
+call compile preprocessFileLineNumbers "addons\antipara\init.sqf";
+
 // service point
 if(!isServer) then {execVM "addons\service_point\service_point.sqf";};
+
+// towing
+execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 
 //### END MODIFIED CODE: addons

@@ -26,7 +26,7 @@ DZE_DEPLOYABLES_CONFIG = [
     // deploy a non-permanent bike from a toolbox right in front of the player that can be re-packed by the owner as long as it's under 10% damage
     ["ItemToolbox",[0,2,1],5,0.1,false,false,false,false,true,["MMT_Civ"],[],["ItemToolbox"]],
     // deploy fortifications from etool 3 meters in front of player that are permanent until server restart
-    ["ItemEtool",[0,3,0],5,-1,false,true,false,true,false,["Land_fort_rampart","Fort_StoneWall_EP1","Land_fort_bagfence_round"],[],["ItemEtool"]],
+    //["ItemEtool",[0,3,0],5,-1,false,true,false,true,false,["Land_fort_rampart","Fort_StoneWall_EP1","Land_fort_bagfence_round"],[],["ItemEtool"]],
     // deploy a permanent helicopter from ruby 5 meters in front of player that can be re-packed by anyone as long as it's under 10% damage
     ["ItemRuby",[0,5,2],7,0.1,true,true,true,false,true,["AH6X_DZ","UH1Y_DZ"],[],["ItemRuby"]],
     // deploy military housing in front of the player that is permanent but can't be re-packed by anyone
@@ -40,12 +40,12 @@ DZE_DEPLOYABLES_CONFIG = [
     ["CinderBlocks",[0,2,0],5,1,false,true,false,false,true,["Hhedgehog_concrete","Land_CncBlock","Land_CncBlock_Stripes"],[],["CinderBlocks"]],
     // deploy a mozzie in front of the player from a rotor/engine/fueltank
     ["ItemToolbox",[0,5,2],7,0.1,true,true,true,false,true,["CSJ_GyroC"],[],["PartVRotor","PartEngine","PartFueltank"]],
-    ["ItemToolbox",[0,10,0],5,-1,false,true,true,true,false,["Land_Mil_Guardhouse"],[],["cinder_wall_kit","cinder_wall_kit","cinder_wall_kit","cinder_door_kit"]],
+    //["ItemToolbox",[0,10,0],5,-1,false,true,true,true,false,["Land_Mil_Guardhouse"],[],["cinder_wall_kit","cinder_wall_kit","cinder_wall_kit","cinder_door_kit"]],
     ["ItemCrowbar",[0,6,0],5,-1,false,true,true,true,false,["Land_Misc_Cargo1Ao","Land_Misc_Cargo1Bo"],[],["metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit"]],
-    ["ItemEtool",[0,8,0],5,-1,false,true,true,true,false,["Land_Fort_Watchtower"],[],["forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"]],
-    ["ItemEtool",[0,8,0],5,-1,false,true,true,true,false,["Land_fortified_nest_big"],[],["ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"]],
-    ["PartWoodPile",[0,2,0],5,1,true,true,true,true,false,["Pile_of_wood"],[],["PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile"]],
-    ["ItemSapphire",[0,2,0],5,1,true,true,true,true,false,["DSHKM_CDF","M2StaticMG","SearchLight_CDF"],[],["ItemSapphire"]]
+    //["ItemEtool",[0,8,0],5,-1,false,true,true,true,false,["Land_Fort_Watchtower"],[],["forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"]],
+    //["ItemEtool",[0,8,0],5,-1,false,true,true,true,false,["Land_fortified_nest_big"],[],["ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"]],
+    //["PartWoodPile",[0,2,0],5,1,true,true,true,true,false,["Pile_of_wood"],[],["PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile"]],
+    //["ItemSapphire",[0,2,0],5,1,true,true,true,true,false,["DSHKM_CDF","M2StaticMG","SearchLight_CDF"],[],["ItemSapphire"]]
 ];
 
 DZE_DEPLOYABLE_ADMINS = [];
