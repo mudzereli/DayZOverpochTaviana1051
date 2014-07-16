@@ -5,21 +5,21 @@
 
 ///////////////////////////////////////////////////////////////////////
 // Do you want your players to gain humanity from killing mission AI?
-DZMSMissHumanity = true;
+DZMSMissHumanity = false;
 
 // How Much Humanity?
-DZMSCntHumanity = 25;
+DZMSCntHumanity = 0;
 
 // Do You Want AI to use NVGs?
 //(They are deleted on death)
-DZMSUseNVG = true;
+DZMSUseNVG = false;
 
 // Do you want AI to use RPG7V's?
 //(Only one unit per group spawn will have one)
 DZMSUseRPG = false;
 
 // Do you want AI kills to count as bandit kills?
-DZMSCntBanditKls = true;
+DZMSCntBanditKls = false;
 
 // Do you want AI to disappear instantly when killed?
 DZMSCleanDeath = false;
@@ -36,7 +36,7 @@ DZMSBodyTime = 2400;
 DZMSRequiredKillPercent = 0.5;
 
 // How long in seconds before mission scenery disappears (default = 1800 / 0 = disabled)
-DZMSSceneryDespawnTimer = 0;
+DZMSSceneryDespawnTimer = 1800;
 
 // Should crates despawn with scenery? (default = false)
 DZMSSceneryDespawnLoot = false;

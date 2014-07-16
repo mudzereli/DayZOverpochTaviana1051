@@ -4,16 +4,16 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // Pistols
-DZMSpistolList = ["Colt1911","glock17_EP1","M9","M9SD","Makarov","MakarovSD","revolver_EP1","UZI_EP1"];
+DZMSpistolList = ["revolver_gold_EP1","RH_m1911old","RH_mk22vsd","RH_p226","RH_python","RH_Deaglemzb"];
 
 // Sniper Rifles
-DZMSsniperList = ["SVD_CAMO","DMR_DZ","huntingrifle","M14_EP1","M24","M40A3","M16A4_ACG"];
+DZMSsniperList = ["DMR_DZ","BAF_LRR_scoped","SCAR_H_LNG_Sniper","FHQ_XM2010_DESERT","vil_SV_98_SD","M107_DZ","ksvk","FHQ_MSR_DESERT","FHQ_RSASS_TAN"];
 
 // Light Machineguns
-DZMSmgList = ["M240_DZ","M249_DZ","Mk_48_DZ","bizon_silenced","MP5A5","MP5SD","RPK_74"];
+DZMSmgList = ["M240_DZ","M249_DZ","m8_SAW","M60A4_EP1","vil_RPK","vil_RPK75","vil_PKP","vil_PKP_EOT"];
 
 // Primary Rifles
-DZMSprimaryList = ["AK_47_M","AK_74","AKS_74_kobra","AKS_74_U","BAF_L85A2_RIS_Holo","bizon_silenced","FN_FAL_ANPVS4","FN_FAL","G36A_camo","G36C_camo","G36C","G36K_camo","M1014","M16A2","M16A2GL","M4A1_AIM_SD_camo","M4A1_Aim","M4A1_HWS_GL_camo","M4A1","M4A3_CCO_EP1","Remington870_lamp","Sa58P_EP1","Sa58V_CCO_EP1","Sa58V_EP1","Sa58V_RCO_EP1"];
+DZMSprimaryList = ["M4A1_AIM_SD_camo","MG36","AKS_74_pso","RH_ctar21glacog","RH_m14acog","RH_m14eot","RH_m14aim","RH_m14","RH_sc2aim","m8_carbineGL","BAF_L85A2_RIS_Holo","Sa58V_RCO_EP1","FN_FAL","G36_C_SD_camo","SCAR_L_STD_EGLM_RCO","SCAR_L_STD_HOLO","SCAR_L_CQC_CCO_SD","SCAR_H_CQC_CCO_SD","SCAR_H_CQC_CCO","AA12_PMC","FHQ_ACR_WDL_HAMR_GL","FHQ_ACR_BLK_CCO_F","FHQ_ACR_TAN_CCO_GL","FHQ_ACR_SNW_IRN_GL_SD_F","vil_AKS_47","vil_AKM","vil_M70B","vil_AK_74m_EOT","vil_AK_74M_PSO","vil_AK_107","vil_AEK_GL","vil_Galil_arm","vil_Galil"];
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // Epoch Supplies. If you have Epoch, these are the supplies in the Construction Crates
