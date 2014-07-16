@@ -1,4 +1,4 @@
-##DayZ Overpoch Taviana 1.2.0
+##DayZ Overpoch Taviana 1.4.0
 Customized Server Files for DayZ Overpoch Taviana
 
 ####Features
@@ -27,6 +27,7 @@ Customized Server Files for DayZ Overpoch Taviana
 ####Bug Fixes
 - delete unused parachutes
 - basic overwatch loot spawns added
+- overwatch vehicles added to dynamic spawns
 
 ####To Do
 - throttle in safe zones (needs programming)
@@ -38,6 +39,8 @@ Customized Server Files for DayZ Overpoch Taviana
 
 version | change
 --------|-------
+1.4.0   | overwatch vehicle spawns
+        | loading screen
 1.3.0   | force name tags in trader / force name tags off by default
         | towing fix
         | remove weight/burden
