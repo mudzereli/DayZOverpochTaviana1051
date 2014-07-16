@@ -1,5 +1,4 @@
 AllowedVehiclesList = [
-//### BEGIN MODIFIED CODE: overwatch vehicles
 ["CYBP_Camel_us",1],
 ["CYBP_Camel_rus",1],
 ["CYBP_Camel_civ",2],
@@ -23,8 +22,7 @@ AllowedVehiclesList = [
 ["350z_mod",2],
 ["350z_ruben",2],
 ["350z_v",2],
-["350z_yellow",2]
-//### END MODIFIED CODE: overwatch vehicles
+["350z_yellow",2],
 ["AH6X_DZ",3],
 ["AN2_DZ",3],
 ["ArmoredSUV_PMC_DZE",1],

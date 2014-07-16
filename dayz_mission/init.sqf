@@ -27,7 +27,7 @@ MaxVehicleLimit = 100; // Default = 50
 MaxDynamicDebris = 700; // Default = 100
 dayz_MapArea = 20000; // Default = 10000
 
-EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
+EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"],["any","any","any","any",10,"Military"],["any","any","any","any",25,"Treasure"],["any","any","any","any",40,"Supplyitems"],["any","any","any","any",55,"Construction"]];
 dayz_fullMoonNights = true;
 
 dayz_minpos = -26000; 
@@ -58,6 +58,7 @@ DZE_BuildOnRoads = false; // Default: False
 	DZE_R3F_WEIGHT = false;
 	DZE_GodModeBase = true;
 	DZE_MissionLootTable = true;
+	DZE_DeathMsgGlobal = true;
 //### END MODIFIED CODE: config
 
 // DZEdebug = true;
@@ -130,6 +131,9 @@ call compile preprocessFileLineNumbers "addons\safezones\init.sqf";
 
 // delete unused parachutes
 call compile preprocessFileLineNumbers "addons\antipara\init.sqf";
+
+// overwrite unlock door to knockout
+player_unlockDoor = compile preprocessFileLineNumbers "overwrites\knockout\player_unlockDoor.sqf";
 
 // service point
 if(!isServer) then {execVM "addons\service_point\service_point.sqf";};

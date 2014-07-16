@@ -1,4 +1,4 @@
-##DayZ Overpoch Taviana 1.4.0
+##DayZ Overpoch Taviana 1.5.0
 Customized Server Files for DayZ Overpoch Taviana
 
 ####Features
@@ -23,11 +23,17 @@ Customized Server Files for DayZ Overpoch Taviana
 * self transfusion              (epoch)
 * disable weight/overburden     (epoch)
 * god mode bases                (epoch)
+* death messages                (epoch)
+* supply drops                  (epoch event)
 
-####Bug Fixes
+
+####Tweaks/Bug Fixes
 - delete unused parachutes
 - basic overwatch loot spawns added
 - overwatch vehicles added to dynamic spawns
+- knockout on too many failed combo attempts
+- splash screen
+- DZMS loot changes by Lucavi
 
 ####To Do
 - throttle in safe zones (needs programming)
@@ -39,6 +45,9 @@ Customized Server Files for DayZ Overpoch Taviana
 
 version | change
 --------|-------
+1.5.0   | knockout after 2-4 unlock attempts
+        | death messages
+        | supply drops
 1.4.0   | overwatch vehicle spawns
         | loading screen
 1.3.0   | force name tags in trader / force name tags off by default
