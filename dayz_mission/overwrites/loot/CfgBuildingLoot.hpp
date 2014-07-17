@@ -272,7 +272,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 0.5;
+		lootChance = 0.8;
 		lootPos[] = {};
 		lootType[] = {
 			{ "assaultrifles", "cfglootweapon", 0.10 },
@@ -294,7 +294,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 2;
 		zombieClass[] = {"z_soldier_pilot"};
-		lootChance = 0.5;
+		lootChance = 0.8;
 		lootPos[] = {};
 		lootType[] = {
 			{ "assaultrifles", "cfglootweapon", 0.10 },
@@ -333,7 +333,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
-		lootChance = 0.4;
+		lootChance = 0.85;
 		lootPos[] = {};
 		lootType[] = {
 			{ "pistols", "cfglootweapon", 0.04},
@@ -345,7 +345,6 @@ class CfgBuildingLoot {
 			{"ItemFlashlightRed","military",0.04},
 			{"ItemKnife","military",0.01},
 			{"ItemGPS","weapon",0.01},
-			{"ItemMap","military",0.02},
 			{"militarybackpacks","militarybackpacks",0.05},
 			{"","medical",0.03},
 			{"","generic",0.1},
@@ -370,7 +369,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman","z_soldier","z_soldier_heavy","z_policeman","z_worker1","z_worker2","z_worker3"};
-		lootChance = 0.4;
+		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
 			{ "pistols", "cfglootweapon", 0.02 },
@@ -414,7 +413,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman","z_soldier","z_soldier_heavy","z_policeman","z_worker1","z_worker2","z_worker3"};
-		lootChance = 0.5;
+		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
 			{ "pistols", "cfglootweapon", 0.02 },
@@ -462,22 +461,21 @@ class CfgBuildingLoot {
 		minRoaming = 2;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier_heavy"};
-		lootChance = 0.4;
+		lootChance = 0.85;
 		lootPos[] = {};
 		lootType[] = {
-			{ "assaultrifles", "cfglootweapon", 0.1 },
-			{ "machineguns", "cfglootweapon", 0.04 },
+			{ "assaultrifles", "cfglootweapon", 0.19 },
+			{ "machineguns", "cfglootweapon", 0.05 },
 			{ "pistols", "cfglootweapon", 0.08 },
-			{ "sniperrifles", "cfglootweapon", 0.03 },
+			{ "sniperrifles", "cfglootweapon", 0.05},
 			{ "militaryshotguns", "cfglootweapon", 0.05 },
 			{ "submachinegun", "cfglootweapon", 0.06 },
-			{"AmmoBoxSmall_556","object",0.01},
-			{"AmmoBoxSmall_762","object",0.02},
+			{"AmmoBoxSmall_556","object",0.03},
+			{"AmmoBoxSmall_762","object",0.04},
 			{"Binocular","weapon",0.01},
 			{"ItemFlashlightRed","military",0.02},
 			{"ItemKnife","military",0.01},
 			{"ItemGPS","weapon",0.01},
-			{"ItemMap","military",0.01},
 			{"Binocular_Vector","military",0.01},
 			{"militarybackpacks","militarybackpacks",0.04},
 			{"","medical",0.08},

@@ -12,7 +12,7 @@ if(DZE_SELF_MARKER_TOGGLE) then {
                 _marker = createMarkerLocal["MarkerPlayer",(position player)];
                 _marker setMarkerShapeLocal "ICON";
                 _marker setMarkerTypeLocal "mil_dot";
-                _marker setMarkerTextLocal "you";
+                _marker setMarkerTextLocal "me";
                 _marker setMarkerColorLocal "ColorGreen";
             } else {
                 DZE_SELF_MARKER_TOGGLE = false;

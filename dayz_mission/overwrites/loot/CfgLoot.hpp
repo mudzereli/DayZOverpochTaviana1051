@@ -320,13 +320,7 @@ class CfgLoot {
 	{"2Rnd_shotgun_74Pellets",0.05},
 	{"8Rnd_9x18_Makarov",0.08},
 	{"15Rnd_W1866_Slug",0.02},
-	{"WoodenArrow",0.04},
-	{"HandRoadFlare",0.07},
-	{"ItemPainkiller",0.02},
-	{"HandChemGreen",0.01},
-	{"HandChemBlue",0.03},
-	{"HandChemRed",0.03},
-	{"ItemHeatPack",0.03}
+	{"WoodenArrow",0.04}
 	};
 	medical[] = {
 	{"ItemBandage",0.4},
@@ -397,10 +391,6 @@ class CfgLoot {
 	{"vil_10Rnd_762x54_SV",0.2},
 	{"gms_k98_mag",0.2},
 	{"vil_20Rnd_762x51_G3",0.2},
-	{"FoodCanUnlabeled",0.07},
-	{"ItemSodaEmpty",0.04},
-	{"ItemSodaCoke",0.01},
-	{"ItemSodaPepsi",0.01},
 	{"ItemBandage",0.04},
 	{"ItemAntibiotic",0.04},
 	{"ItemPainkiller",0.04},
@@ -430,10 +420,6 @@ class CfgLoot {
 	{"30Rnd_9x19_MP5",0.01},
 	{"30Rnd_9x19_MP5SD",0.01},
 	{"100Rnd_762x51_M240",0.02},
-	{"HandChemGreen",0.02},
-	{"HandChemBlue",0.02},
-	{"HandChemRed",0.04},
-	{"ItemHeatPack",0.03},
 	{"FoodMRE",0.01},
 	{"8Rnd_9x18_MakarovSD",0.01},
 	{"20Rnd_B_765x17_Ball",0.04},

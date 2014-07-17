@@ -1,4 +1,4 @@
-##DayZ Overpoch Taviana 1.6.0
+##DayZ Overpoch Taviana 1.6.1
 Customized Server Files for DayZ Overpoch Taviana
 
 ####Features
@@ -35,6 +35,8 @@ Customized Server Files for DayZ Overpoch Taviana
 - DZMS loot changes by Lucavi
 - overwatch weapons on traders
 - config based traders
+- self map marker
+- increased loot 
 
 ####To Do
 - throttle in safe zones (needs programming)
@@ -46,6 +48,7 @@ Customized Server Files for DayZ Overpoch Taviana
 
 version | change
 --------|-------
+1.6.1   | loot tweaks by Debo / map marker fix
 1.6.0   | config based traders w/ overwatch items
         | DZMS bug fix
         | add overwatch weapons to suicide 
