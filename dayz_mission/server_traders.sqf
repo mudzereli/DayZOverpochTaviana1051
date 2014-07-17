@@ -31,7 +31,8 @@ serverTraders = [
 "RU_Farmwife5",
 "GUE_Woodlander1",
 "RU_Worker1",
-"GUE_Soldier_2"];
+"GUE_Soldier_2",
+"US_Pilot_Light_EP1"];
 
 /*---------------------------------------------------------------------------
 			HERO VENDORS
@@ -132,12 +133,12 @@ menu_Citizen3 = [
 ---------------------------------------------------------------------------*/
 
 menu_GUE_Soldier_3 = [
-	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
+	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565],["Overwatch Police Cars",822],["Overwatch Civ Cars",823]],
 	[],
 	"neutral"
 ];
 menu_RU_Woodlander4 = [
-	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
+	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591],["Overwatch Police Cars",822],["Overwatch Civ Cars",823]],
 	[],
 	"neutral"
 ];
@@ -198,6 +199,12 @@ menu_GUE_Soldier_2 = [
 //WEST BRIDGE
 menu_Reynolds_PMC = [
 	[["Wholesale",636]],
+	[],
+	"neutral"
+];
+
+menu_US_Pilot_Light_EP1 = [
+	[["AK Variants",808],["G3 Variants",809],["MAS Rifles",811],["SCAR Rifles",812],["HK416 AR",813],["HK417 AR",814],["LMG",815],["Snow ACR",816],["Black ACR",817],["Tan ACR",818],["Woodland ACR",819],["Sniper Rifles",820],["Secondary Weapons",810],["Ammunition",821]],
 	[],
 	"neutral"
 ];

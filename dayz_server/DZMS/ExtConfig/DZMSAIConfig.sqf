@@ -118,10 +118,11 @@ DZMSWeps1 = [
 "vil_G36VA4Eot",
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
-"M249_DZ"
+"M249_DZ",
 "M4A3_CCO_EP1"
-
 ];
+
+DZMSWeps2 = [
 "AK_107_BASE",
 "AK_107_GL_kobra",
 "RPK_74",
@@ -145,7 +146,7 @@ DZMSWeps1 = [
 "vil_G36VA4Eot",
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
-"M249_DZ"
+"M249_DZ",
 "M4A3_CCO_EP1"
 ];
 
@@ -173,7 +174,7 @@ DZMSWeps3 = [
 "vil_G36VA4Eot",
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
-"M249_DZ"
+"M249_DZ",
 "M4A3_CCO_EP1"
 ];
 

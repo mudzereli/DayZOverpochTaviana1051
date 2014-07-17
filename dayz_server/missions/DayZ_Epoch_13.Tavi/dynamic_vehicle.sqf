@@ -1,7 +1,4 @@
 AllowedVehiclesList = [
-["CYBP_Camel_us",1],
-["CYBP_Camel_rus",1],
-["CYBP_Camel_civ",2],
 ["Civcar",2],
 ["Civcarbu",2],
 ["Civcarbl",2],

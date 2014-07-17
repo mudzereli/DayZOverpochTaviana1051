@@ -1,4 +1,4 @@
-##DayZ Overpoch Taviana 1.5.0
+##DayZ Overpoch Taviana 1.6.0
 Customized Server Files for DayZ Overpoch Taviana
 
 ####Features
@@ -12,7 +12,6 @@ Customized Server Files for DayZ Overpoch Taviana
 * take clothes                  (zabn/mudzereli)
 * suicide                       (mudzereli)
 * safe zones                    (infistar)
-* wmod                          (mudzereli)
 * snap pro                      (raymix)
 * deploy bike                   (mudzereli)
 * vehicle service points        (axecop)
@@ -34,6 +33,8 @@ Customized Server Files for DayZ Overpoch Taviana
 - knockout on too many failed combo attempts
 - splash screen
 - DZMS loot changes by Lucavi
+- overwatch weapons on traders
+- config based traders
 
 ####To Do
 - throttle in safe zones (needs programming)
@@ -45,6 +46,10 @@ Customized Server Files for DayZ Overpoch Taviana
 
 version | change
 --------|-------
+1.6.0   | config based traders w/ overwatch items
+        | DZMS bug fix
+        | add overwatch weapons to suicide 
+        | can now deploy bikes on road
 1.5.0   | knockout after 2-4 unlock attempts
         | death messages
         | supply drops

@@ -60,6 +60,11 @@ getDeployableSimulation = {
     (DZE_DEPLOYABLES select _this) select 11
 };
 
+/* can the object be built on a road? */
+getDeployableBuildOnRoad = {
+    (DZE_DEPLOYABLES select _this) select 12
+};
+
 /* should players be allowed to pack deployables at all? */
 getDeployablePackAny = {
     ((_this call getDamageLimit) >= 0) || (!(isNull player) && {(getPlayerUID player) in DZE_DEPLOYABLE_ADMINS});   
@@ -106,13 +111,19 @@ getDeployableKitDisplay = {
 
 /* this gets the display name of the deployable or falls back to class name if unsuccessful */
 getDeployableDisplay = {
-    private["_display"];
+    private["_display","_class"];
+    _class = (_this call getDeployableClass);
     //diag_log text format["BIKE: trying to get display of %1",_this call getDeployableClass];
-    _display = getText (configFile >> "CfgVehicles" >> (_this call getDeployableClass) >> "displayName");
+    _display = getText (configFile >> "CfgVehicles" >> _class >> "displayName");
     //diag_log text format["BIKE: post config lookup: display = %1",_display];
     if((isNil "_display")||_display == "") then {
-        _display = (_this call getDeployableClass);
+        _display = _class;
     };
+    {
+        if(_class == (_x select 0)) then {
+            _display = (_x select 1);
+        };
+    } forEach DZE_DEPLOYABLE_NAME_MAP;
     //diag_log text format["BIKE: post patch check: display = %1",_display];
     _display
 };

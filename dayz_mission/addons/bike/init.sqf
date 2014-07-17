@@ -13,7 +13,7 @@ player_deploy = compile preprocessFileLineNumbers "addons\bike\player_deploy.sqf
 // inflate deployables
 DZE_DEPLOYABLES = [];
 {
-    private["_class","_distance","_deployables","_packDist","_packOthers","_clearCargo","_permanent","_damage","_needNear","_parts","_requirePlot","_enableSim"];
+    private["_class","_distance","_deployables","_packDist","_packOthers","_clearCargo","_permanent","_damage","_needNear","_parts","_requirePlot","_enableSim","_road"];
     _class       = _x select 0;
     _distance    = _x select 1;
     _packDist    = _x select 2;
@@ -23,11 +23,12 @@ DZE_DEPLOYABLES = [];
     _permanent   = _x select 6;
     _requirePlot = _x select 7;
     _enableSim   = _x select 8;
-    _deployables = _x select 9;
-    _needNear    = _x select 10;
-    _parts       = _x select 11;
+    _road        = _x select 9;
+    _deployables = _x select 10;
+    _needNear    = _x select 11;
+    _parts       = _x select 12;
     {
-        DZE_DEPLOYABLES set [count DZE_DEPLOYABLES,[_class,_distance,_packDist,_damage,_packOthers,_clearCargo,_permanent,_x,_needNear,_parts,_requirePlot,_enableSim]];
+        DZE_DEPLOYABLES set [count DZE_DEPLOYABLES,[_class,_distance,_packDist,_damage,_packOthers,_clearCargo,_permanent,_x,_needNear,_parts,_requirePlot,_enableSim,_road]];
     } forEach _deployables;
 } forEach DZE_DEPLOYABLES_CONFIG;
 

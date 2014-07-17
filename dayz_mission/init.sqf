@@ -59,6 +59,7 @@ DZE_BuildOnRoads = false; // Default: False
 	DZE_GodModeBase = true;
 	DZE_MissionLootTable = true;
 	DZE_DeathMsgGlobal = true;
+	DZE_ConfigTrader = true;
 //### END MODIFIED CODE: config
 
 // DZEdebug = true;
@@ -117,9 +118,6 @@ call compile preprocessFileLineNumbers "addons\suicide\init.sqf";
 
 // take clothes
 call compile preprocessFileLineNumbers "addons\takeclothes\init.sqf";
-
-// weapon mod
-call compile preprocessFileLineNumbers "addons\wmod\init.sqf";
 
 // fast trading
 call compile preprocessFileLineNumbers "overwrites\fast_trading\init.sqf";

@@ -163,6 +163,10 @@ class RscTitles
 };
 //### END MODIFIED CODE: towing
 
-//### END MODIFIED CODE: loot
+//### BEGIN MODIFIED CODE: loot
 #include "overwrites\loot\CfgBuildingLoot.hpp"
 //### END MODIFIED CODE: loot
+
+//### BEGIN MODIFIED CODE: config traders
+ #include "overwrites\CfgServerTrader\cfgServerTrader.hpp"
+//### END MODIFIED CODE: config traders

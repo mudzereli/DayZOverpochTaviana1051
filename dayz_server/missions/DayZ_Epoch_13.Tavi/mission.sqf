@@ -743,4 +743,26 @@ if (true) then
                                END CAVE.
 
 ---------------------------------------------------------------------------*/
+
+{
+  _this = createAgent ["US_Pilot_Light_EP1", [(_x select 1),(_x select 2),(_x select 3)], [], 0, "CAN_COLLIDE"];
+  _this setDir (_x select 0);
+  _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
+  _this setUnitAbility 0.60000002;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
+} foreach [
+  // branibor
+  [312,7398,4292,0],
+  // sabina
+  [83.6,15296,9295.53,0],
+  // lypestock
+  [217,11704.1,15227.7,0],
+  // bilgrad
+  [61,5518.94,8752.42,0],
+  // hero
+  [282,15596,16398,0],
+  // bandit
+  [208,10965.5,661,0]
+];
+
 processInitCommands;
