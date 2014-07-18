@@ -1,63 +1,66 @@
 private ["_spawnChance", "_spawnMarker", "_spawnRadius", "_markerRadius", "_item", "_debug", "_start_time", "_loot", "_loot_amount", "_loot_box", "_wait_time", "_spawnRoll", "_position", "_event_marker", "_loot_pos", "_debug_marker","_loot_box", "_hint"];
  
-_spawnChance =  0.35; // Percentage chance of event happening
+_spawnChance =  0.85; // Percentage chance of event happening
 _markerRadius = 350; // Radius the loot can spawn and used for the marker
 _debug = false; // Puts a marker exactly were the loot spawns
  
 _loot_box = "RUVehicleBox";
 _loot_lists = [
 [
-["G36a","G36C","G36_C_SD_eotech","G36K","MP5A5","MP5SD"],
+["RH_hk416acog","m8_sharpshooter","BAF_L85A2_RIS_SUSAT","SCAR_L_STD_Mk4CQT"],
 ["20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD","20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD","20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD","20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD","20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD","20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD","20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD","20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD","20Rnd_556x45_Stanag","30Rnd_556x45_G36","30Rnd_556x45_G36SD","30Rnd_556x45_Stanag","30Rnd_556x45_StanagSD","30Rnd_9x19_MP5","30Rnd_9x19_MP5SD","15Rnd_9x19_M9SD"]
 ],
+
 [
-["M9SD"],
-["15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD"]
+["RH_hk417aim","RH_hk417aim","RH_hk417acog","RH_hk417acog","RH_hk417sdeotech"],
+["RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_hk417","RH_20Rnd_762x51_SD_hk417","RH_20Rnd_762x51_SD_hk417","RH_20Rnd_762x51_SD_hk417","RH_20Rnd_762x51_SD_hk417"]
 ],
+
 [
-["M9SD"],
-["15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD"]
+["vil_RPK74M_P29","vil_RPK74M_P29","vil_VSS_PSO"     ],
+["vil_45Rnd_545x39_AK","vil_45Rnd_545x39_AK","vil_45Rnd_545x39_AK","vil_45Rnd_545x39_AK","vil_45Rnd_545x39_AK","vil_45Rnd_545x39_AK","vil_45Rnd_545x39_AK","10Rnd_9x39_SP5_VSS","10Rnd_9x39_SP5_VSS","10Rnd_9x39_SP5_VSS","10Rnd_9x39_SP5_VSS"]
 ],
+
 [
-["M9SD"],
-["15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD","15Rnd_9x19_M9SD"]
+["vil_SVD_P21"],
+["10Rnd_762x54_SVD","10Rnd_762x54_SVD","10Rnd_762x54_SVD","10Rnd_762x54_SVD","10Rnd_762x54_SVD"]
 ],
+
 [
 ["BAF_LRR_scoped"],
-["5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1"]
+["5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1"A1","5Rnd_86x70_L115A1"]
 ],
-[
-["BAF_LRR_scoped_W"],
-["5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1"]
-],
-[
-["revolver_gold_EP1"],
-["HandGrenade_West","SmokeShell","SmokeShellGreen","SmokeShellRed","SmokeShellYellow","SmokeShellOrange","SmokeShellPurple","SmokeShellBlue","PipeBomb","Mine","7Rnd_45ACP_1911","7Rnd_45ACP_1911","7Rnd_45ACP_1911","7Rnd_45ACP_1911","7Rnd_45ACP_1911"]
-],
+
 [
 ["M107"],
-["10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107"]
+["10Rnd_127x99_m107","10Rnd_127x99_m107"]
 ],
+
 [
-["BAF_AS50_scoped"],
-["10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107","10Rnd_127x99_m107"]
+["USSR_cheytacM200"],
+["USSR_5Rnd_408","USSR_5Rnd_408","USSR_5Rnd_408","USSR_5Rnd_408"]
 ],
+
 [
-["DMR","M4SPR","M8_sharpshooter","M24","M40A3"],
-["20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24"]
+["DMR","M4SPR","SCAR_H_LNG_Sniper","vil_SV_98"],
+["vil_10Rnd_762x54_SV","vil_10Rnd_762x54_SV","vil_10Rnd_762x54_SV","vil_10Rnd_762x54_SV","20rnd_762x51_B_SCAR","20rnd_762x51_B_SCAR","20rnd_762x51_B_SCAR","20rnd_762x51_B_SCAR","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24","20Rnd_762x51_DMR","5Rnd_762x51_M24"]
 ],
+
 [
-["MG36","Mk_48","M240","M249","M8_SAW"],
+["MG36","Mk_48_DZ","M240_DZ","M249","M8_SAW"],
 ["100Rnd_556x45_BetaCMag","100Rnd_762x51_M240","200Rnd_556x45_M249","100Rnd_556x45_BetaCMag","100Rnd_762x51_M240","200Rnd_556x45_M249","100Rnd_556x45_BetaCMag","100Rnd_762x51_M240","200Rnd_556x45_M249","100Rnd_556x45_BetaCMag","100Rnd_762x51_M240","200Rnd_556x45_M249","100Rnd_556x45_BetaCMag","100Rnd_762x51_M240","200Rnd_556x45_M249","100Rnd_556x45_BetaCMag","100Rnd_762x51_M240","200Rnd_556x45_M249"]
 ],
+
 [
-["M16A2","M16A2GL","M16A4","M16A4_GL","M16A4_ACG_GL","M16A4_ACG","M4A1","M4A1_HWS_GL","M4A1_HWS_GL_camo","M4A1_HWS_GL_SD_Camo","M4A1_RCO_GL","M4A1_Aim","M4A1_Aim_camo","M4A1_AIM_SD_camo"],
+["M16A4","M16A4_GL","M16A4_ACG_GL","M16A4_ACG","M4A1","M4A1_HWS_GL","M4A1_HWS_GL_camo","M4A1_HWS_GL_SD_Camo","M4A1_RCO_GL","M4A1_Aim","M4A1_Aim_camo","M4A1_AIM_SD_camo"],
 ["30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"]
 ],
+
 [
-["M8_carbine","M8_carbineGL","M8_compact"],
-["30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_StanagSD","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"]
+["FHQ_ACR_TAN_HAMR_GL_F","FHQ_ACR_TAN_HAMR_GL_F","FHQ_ACR_SNW_CCO_GL","FHQ_ACR_SNW_CCO_GL","FHQ_ACR_BLK_HWS_GL_SD_F","FHQ_ACR_BLK_HWS_GL_SD_F"],
+["FHQ_rem_30Rnd_680x43_ACR_SD","FHQ_rem_30Rnd_680x43_ACR_SD","FHQ_rem_30Rnd_680x43_ACR_SD","FHQ_rem_30Rnd_680x43_ACR_SD","FHQ_rem_30Rnd_680x43_ACR_SD","FHQ_rem_30Rnd_680x43_ACR_SD","FHQ_rem_30Rnd_680x43_ACR_SD","FHQ_rem_30Rnd_680x43_ACR","FHQ_rem_30Rnd_680x43_ACR","FHQ_rem_30Rnd_680x43_ACR","FHQ_rem_30Rnd_680x43_ACR","FHQ_rem_30Rnd_680x43_ACR","FHQ_rem_30Rnd_680x43_ACR","FHQ_rem_30Rnd_680x43_ACR","FHQ_rem_30Rnd_680x43_ACR","FHQ_rem_30Rnd_680x43_ACR"]
 ]
+
 ];
 _loot = _loot_lists call BIS_fnc_selectRandom;
  

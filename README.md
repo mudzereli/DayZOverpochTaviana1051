@@ -1,4 +1,4 @@
-##DayZ Overpoch Taviana 1.6.3
+##DayZ Overpoch Taviana 1.6.4
 Customized Server Files for DayZ Overpoch Taviana
 
 ####Features
@@ -54,6 +54,7 @@ Customized Server Files for DayZ Overpoch Taviana
 
 version | change
 --------|-------
+1.6.4   | supply mission loot tweaks (Debo)
 1.6.3   | change refuel speed 0.5 from 0.05
         | remove police cars
         | remove rearm horn option

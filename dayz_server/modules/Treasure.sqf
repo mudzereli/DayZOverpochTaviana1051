@@ -1,6 +1,6 @@
 private ["_spawnChance", "_spawnMarker", "_spawnRadius", "_markerRadius", "_item", "_debug", "_start_time", "_loot", "_loot_amount", "_loot_box", "_wait_time", "_spawnRoll", "_position", "_event_marker", "_loot_pos", "_debug_marker","_loot_box", "_hint"];
  
-_spawnChance =  0.45; // Percentage chance of event happening
+_spawnChance =  0.85; // Percentage chance of event happening
 _markerRadius = 350; // Radius the loot can spawn and used for the marker
 _debug = false; // Puts a marker exactly were the loot spawns
  
@@ -12,47 +12,15 @@ _loot_lists = [
 ],
 [
 ["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz"]
+["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemBriefcase100oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz","ItemGoldBar10oz"]
 ],
 [
 ["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar"]
+["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemBriefcase100oz","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar"]
 ],
 [
 ["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemBriefcase100oz"]
-],
-[
-["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar"]
-],
-[
-["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar","ItemCopperBar"]
-],
-[
-["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemCopperBar","ItemCopperBar"]
-],
-[
-["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemCopperBar","ItemCopperBar"]
-],
-[
-["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemCopperBar","ItemCopperBar"]
-],
-[
-["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemCopperBar","ItemCopperBar"]
-],
-[
-["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemCopperBar","ItemCopperBar"]
-],
-[
-["revolver_gold_EP1"],
-["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemGoldBar","ItemCopperBar","ItemGoldBar10oz","ItemSilverBar10oz","ItemTinBar","ItemSilverBar","ItemGoldBar","ItemCopperBar","ItemGoldBar10oz","ItemSilverBar10oz","ItemTinBar","ItemSilverBar"]
+["6Rnd_45ACP","6Rnd_45ACP","6Rnd_45ACP","ItemBriefcase100oz","ItemBriefcase100oz","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar","ItemGoldBar"]
 ]
 ];
 _loot = _loot_lists call BIS_fnc_selectRandom;
