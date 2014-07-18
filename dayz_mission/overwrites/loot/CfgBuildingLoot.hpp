@@ -482,7 +482,7 @@ class CfgBuildingLoot {
 			{"","generic",0.3},
 			{"","military",0.01},
 			{"machinegunammo","machinegunammo",0.05},
-			{"militaryclothes","militaryclothes",0.05},
+			{"militaryclothes","militaryclothes",0.02},
 			{"NVGoggles","weapon",0.01}
 		};
 		lootTypeSmall[] = {
@@ -501,7 +501,7 @@ class CfgBuildingLoot {
 			{ "5Rnd_86x70_L115A1","magazine",0.03},
 			{ "10Rnd_127x99_m107","magazine",0.02},
 			{ "machinegunammoexpl","single",0.02 },
-			{ "militaryclothes","single",0.05 },
+			{ "militaryclothes","single",0.01 },
 			{ "NVGoggles","weapon",0.04 },
 			{ "100Rnd_762x54_PK","magazine",0.02 }
 		};
