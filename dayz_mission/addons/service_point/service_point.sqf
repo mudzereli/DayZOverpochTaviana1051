@@ -17,7 +17,7 @@ _message = "Vehicle Service Point nearby"; // message to be shown when in range 
 _refuel_enable = true; // enable or disable the refuel option
 _refuel_costs = []; // free for all vehicles (equal to [["AllVehicles",[]]])
 _refuel_updateInterval = 1; // update interval (in seconds)
-_refuel_amount = 0.05; // amount of fuel to add with every update (in percent)
+_refuel_amount = 0.5; // amount of fuel to add with every update (in percent)
 
 // repair settings
 _repair_enable = true; // enable or disable the repair option
@@ -111,7 +111,9 @@ _fnc_getWeapons = {
 		{
 			private "_weaponName";
 			_weaponName = getText (configFile >> "CfgWeapons" >> _x >> "displayName");
-			_weapons set [count _weapons, [_x, _weaponName, _turret]];
+			if(_weaponName != "Horn") then {
+				_weapons set [count _weapons, [_x, _weaponName, _turret]];	
+			};
 		} forEach _weaponsTurret;
 	};
 	_weapons

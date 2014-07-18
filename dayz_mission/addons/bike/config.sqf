@@ -25,7 +25,7 @@
 
 DZE_DEPLOYABLES_CONFIG = [
     // deploy a non-permanent bike from a toolbox right in front of the player that can be re-packed by the owner as long as it's under 10% damage
-    ["ItemToolbox",[0,2,1],5,0.1,false,false,false,false,true,true,["MMT_Civ"],[],["ItemToolbox"]],
+    ["ItemToolbox",[0,2,1],5,0.1,false,false,false,false,true,true,["MMT_Civ"],[],["PartGeneric"]],
     // deploy fortifications from etool 3 meters in front of player that are permanent until server restart
     //["ItemEtool",[0,3,0],5,-1,false,true,false,true,false,false,["Land_fort_rampart","Fort_StoneWall_EP1","Land_fort_bagfence_round"],[],["ItemEtool"]],
     // deploy a permanent helicopter from ruby 5 meters in front of player that can be re-packed by anyone as long as it's under 10% damage
@@ -34,9 +34,9 @@ DZE_DEPLOYABLES_CONFIG = [
     ["ItemEmerald",[0,8,0],10,-1,false,false,true,true,false,false,["Barrack2","Land_fortified_nest_small_EP1"],[],["ItemEmerald"]],
     ["ItemCitrine",[0,1,1],5,1,false,true,true,true,false,false,["Baseball","Loudspeaker","MetalBucket","Misc_Videoprojektor","Misc_Videoprojektor_platno","Misc_Wall_lamp","Notebook","SatPhone","Radio","SmallTV","Suitcase"],[],["ItemCitrine"]],
     // deploy some housing items from parts piles in front of the player that are permanent but can be re-packed by anyone
-    ["PartGeneric",[0,2,0],5,1,true,true,true,true,false,false,["Desk","FoldChair","FoldTable","SmallTable","Barrel1","Garbage_can"],[],["PartGeneric"]],
+    //["PartGeneric",[0,2,0],5,1,true,true,true,true,false,false,["Desk","FoldChair","FoldTable","SmallTable","Barrel1","Garbage_can"],[],["PartGeneric"]],
     // deploy some housing items from wood piles in front of the player that are permanent but can be re-packed by anyone
-    ["PartWoodPile",[0,2,0],5,1,true,true,true,true,false,false,["Land_Rack_EP1","Land_Table_EP1","Land_Shelf_EP1","WoodChair","Park_bench2","Park_bench1"],[],["PartWoodPile"]],
+    //["PartWoodPile",[0,2,0],5,1,true,true,true,true,false,false,["Land_Rack_EP1","Land_Table_EP1","Land_Shelf_EP1","WoodChair","Park_bench2","Park_bench1"],[],["PartWoodPile"]],
     // deploy concrete barricades from cinderblocks 2m in front of the player, that are permanent and can only be re-packed by the person who placed them
     ["CinderBlocks",[0,2,0],5,1,false,true,false,false,true,true,["Hhedgehog_concrete","Land_CncBlock","Land_CncBlock_Stripes"],[],["CinderBlocks"]],
     // deploy a mozzie in front of the player from a rotor/engine/fueltank

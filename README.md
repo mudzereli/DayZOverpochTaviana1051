@@ -1,4 +1,4 @@
-##DayZ Overpoch Taviana 1.6.1
+##DayZ Overpoch Taviana 1.6.3
 Customized Server Files for DayZ Overpoch Taviana
 
 ####Features
@@ -37,17 +37,30 @@ Customized Server Files for DayZ Overpoch Taviana
 - config based traders
 - self map marker
 - increased loot 
+* remove police cars
+* remove rearm horn option
+* change refuel speed 0.5 from 0.05
+* make bike cost scrap metal instead of toolbox
+- sell distance for vehicles 30m from 10m
 
 ####To Do
 - throttle in safe zones (needs programming)
 - gem trading (could possibly use my deploy mod for this)
 - maintainence (i think this is set up but need to double check everything)
 - single currency (needs lots of research/work)
+- dont allow vehicles to deploy underground
 
 ####Change Log
 
 version | change
 --------|-------
+1.6.3   | change refuel speed 0.5 from 0.05
+        | remove police cars
+        | remove rearm horn option
+        | make bike cost scrap metal instead of toolbox
+        | sell distance for vehicles 30m from 10m
+1.6.2   | dynamic vehicle tweaks (Lucavi)
+        | default loadout start with scrap (Lucavi)
 1.6.1   | loot tweaks by Debo / map marker fix
 1.6.0   | config based traders w/ overwatch items
         | DZMS bug fix

@@ -133,12 +133,12 @@ menu_Citizen3 = [
 ---------------------------------------------------------------------------*/
 
 menu_GUE_Soldier_3 = [
-	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565],["Overwatch Police Cars",822],["Overwatch Civ Cars",823]],
+	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Trucks",495],["Used Cars",585],["Utility Vehicles",565],["Overwatch Civ Cars",823]],
 	[],
 	"neutral"
 ];
 menu_RU_Woodlander4 = [
-	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591],["Overwatch Police Cars",822],["Overwatch Civ Cars",823]],
+	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Trucks",590],["Used Cars",520],["Utility Vehicles",591],["Overwatch Civ Cars",823]],
 	[],
 	"neutral"
 ];
