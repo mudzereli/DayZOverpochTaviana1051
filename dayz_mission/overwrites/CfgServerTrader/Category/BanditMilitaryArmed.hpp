@@ -24,7 +24,7 @@ class Category_569 {
 		buy[] = {8,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar10oz"};
 	};
-	class GAZ_Vodnik_DZE {
+	class GAZ_Vodnik {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemBriefcase100oz"};
 		sell[] = {2,"ItemBriefcase100oz"};
