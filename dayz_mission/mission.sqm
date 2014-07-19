@@ -1202,7 +1202,10 @@ class Mission
 	};
 	class Markers
 	{
-		items=28;
+		//###BEGIN MODIFIED CODE: traders
+		//items=30;
+		items=30;
+		//###END MODIFIED CODE: traders
 		class Item0
 		{
 			position[]={10732.087,193.02972,12687.841};
@@ -1403,6 +1406,24 @@ class Mission
 			type="mil_box";
 			colorName="ColorBlack";
 		};
+		//###BEGIN MODIFIED CODE: traders
+		class Item28
+		{
+			position[]={10138.7,0.797,19023.9};
+			name="BlackMarket";
+			text="Black Market Dealer";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		class Item29
+		{
+			position[]={8505.2,0.0491,5577.71};
+			name="BlackMarket2";
+			text="Black Market Dealer";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		//###END MODIFIED CODE: traders
 	};
 	class Sensors
 	{

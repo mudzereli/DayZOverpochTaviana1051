@@ -32,7 +32,11 @@ serverTraders = [
 "GUE_Woodlander1",
 "RU_Worker1",
 "GUE_Soldier_2",
-"US_Pilot_Light_EP1"];
+//### BEGIN MODIFIED CODE: traders
+"US_Pilot_Light_EP1",
+"GUE_Woodlander2"
+//### END MODIFIED CODE: traders
+];
 
 /*---------------------------------------------------------------------------
 			HERO VENDORS
@@ -203,8 +207,18 @@ menu_Reynolds_PMC = [
 	"neutral"
 ];
 
+//### BEGIN MODIFIED CODE: traders
+//OVERWATCH GUNS
 menu_US_Pilot_Light_EP1 = [
 	[["AK Variants",808],["G3 Variants",809],["MAS Rifles",811],["SCAR Rifles",812],["HK416 AR",813],["HK417 AR",814],["LMG",815],["Snow ACR",816],["Black ACR",817],["Tan ACR",818],["Woodland ACR",819],["Sniper Rifles",820],["Secondary Weapons",810],["Ammunition",821]],
 	[],
 	"neutral"
 ];
+
+// Black market
+menu_GUE_Woodlander2 = [
+	[["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
+	[],
+	"neutral"
+];
+//### END MODIFIED CODE: traders

@@ -744,6 +744,8 @@ if (true) then
 
 ---------------------------------------------------------------------------*/
 
+
+//### BEGIN MODIFIED CODE: traders
 {
   _this = createAgent ["US_Pilot_Light_EP1", [(_x select 1),(_x select 2),(_x select 3)], [], 0, "CAN_COLLIDE"];
   _this setDir (_x select 0);
@@ -764,5 +766,19 @@ if (true) then
   // bandit
   [208,10965.5,661,0]
 ];
+{
+  _this = createAgent ["GUE_Woodlander2", [(_x select 1),(_x select 2),(_x select 3)], [], 0, "CAN_COLLIDE"];
+  _this setDir (_x select 0);
+  _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
+  _this setUnitAbility 0.60000002;
+  _this allowDammage false; _this disableAI 'FSM'; _this disableAI 'MOVE'; _this disableAI 'AUTOTARGET'; _this disableAI 'TARGET'; _this setBehaviour 'CARELESS'; _this forceSpeed 0;_this enableSimulation false;
+} foreach [
+  // yaroslov
+  [186.147,10138.7,19023.9,0.797],
+  // polyanka
+  [267.255,8505.2,5577.71,0.0491]
+];
+
+//### END MODIFIED CODE: traders
 
 processInitCommands;
