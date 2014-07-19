@@ -1427,7 +1427,10 @@ class Mission
 	};
 	class Sensors
 	{
-		items=4;
+		//###BEGiN MODIFIED CODE: traders
+		//items=4;
+		items=6;
+		//###END MODIFIED CODE: traders
 		class Item0
 		{
 			position[]={15309.663,-14.993002,9278.4912};
@@ -1496,6 +1499,42 @@ class Mission
 			{
 			};
 		};
+		//###BEGiN MODIFIED CODE: traders
+		class Item4
+		{
+			position[]={6812,0.26,8538};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonekrasno";
+			expCond="(player distance zonekrasno) < 50;";
+			expActiv="[""Krasno Aircraft Dealer"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Krasno Aircraft Dealer"",true,""leave""] spawn player_traderCity;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={16555.6,0.0014,10162};
+			a=100;
+			b=100;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="zonedubovo";
+			expCond="(player distance zonedubovo) < 50;";
+			expActiv="[""Dubovo Aircraft Dealer"",true,""enter""] spawn player_traderCity;";
+			expDesactiv="[""Dubovo Aircraft Dealer"",true,""leave""] spawn player_traderCity;";
+			class Effects
+			{
+			};
+		};
+		//###END MODIFIED CODE: traders
 	};
 };
 class Intro
