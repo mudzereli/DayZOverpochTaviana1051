@@ -6,8 +6,8 @@ class Category_621 {
 	};
 	class 20Rnd_762x51_FNFAL {
 		type = "trade_items";
-		buy[] = {4,"ItemSilverBar10oz"};
-		sell[] = {2,"ItemSilverBar10oz"};
+		buy[] = {4,"ItemSilverBar"};
+		sell[] = {2,"ItemSilverBar"};
 	};
 	class 30Rnd_545x39_AK {
 		type = "trade_items";
@@ -33,8 +33,8 @@ class Category_480 {
 	};
 	class 20Rnd_762x51_FNFAL {
 		type = "trade_items";
-		buy[] = {4,"ItemSilverBar10oz"};
-		sell[] = {2,"ItemSilverBar10oz"};
+		buy[] = {4,"ItemSilverBar"};
+		sell[] = {2,"ItemSilverBar"};
 	};
 	class 30Rnd_545x39_AK {
 		type = "trade_items";

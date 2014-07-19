@@ -2,7 +2,7 @@ class Category_526 {
 	class Saiga12K {
 		type = "trade_weapons";
 		buy[] = {5,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
 	class m8_compact {
 		type = "trade_weapons";
@@ -27,7 +27,7 @@ class Category_526 {
 	class M24_des_EP1 {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {6,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class VSS_vintorez {
 		type = "trade_weapons";
@@ -37,12 +37,12 @@ class Category_526 {
 	class SVD_des_EP1 {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {6,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class SVD {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {6,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class M8_SAW {
 		type = "trade_weapons";

@@ -12,12 +12,12 @@ class Category_603 {
 	class Mk_48_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
 	};
 	class Pecheneg_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
 	};
 };
 class Category_638 {
@@ -34,11 +34,11 @@ class Category_638 {
 	class Mk_48_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
 	};
 	class Pecheneg_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
 	};
 };
