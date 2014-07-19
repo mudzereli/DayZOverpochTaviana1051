@@ -67,7 +67,7 @@ DZMSSkills3 = [
 // This is the primary weaponlist that can be assigned to AI
 // These are assigned based on AI difficulty level
 DZMSWeps0 = [
-"AK_107_BASE",
+"vil_AK_107",
 "AK_107_GL_kobra",
 "RPK_74",
 "Saiga12K",
@@ -83,10 +83,10 @@ DZMSWeps0 = [
 "Sa58V_CCO_EP1",
 "SCAR_L_STD_Mk4CQT",
 "SCAR_L_CQC_EGLM_Holo",
-"SCAR_H_Base",
+"SCAR_H_CQC_CCO",
 "SCAR_H_STD_EGLM_Spect",
 "FHQ_ACR_BLK_HAMR_GL_SD",
-"vil_AK47_BASE",
+"AK_47_M",
 "vil_G36VA4Eot",
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
@@ -95,7 +95,7 @@ DZMSWeps0 = [
 ];
 
 DZMSWeps1 = [
-"AK_107_BASE",
+"vil_AK_107",
 "AK_107_GL_kobra",
 "RPK_74",
 "Saiga12K",
@@ -111,10 +111,10 @@ DZMSWeps1 = [
 "Sa58V_CCO_EP1",
 "SCAR_L_STD_Mk4CQT",
 "SCAR_L_CQC_EGLM_Holo",
-"SCAR_H_Base",
+"SCAR_H_CQC_CCO",
 "SCAR_H_STD_EGLM_Spect",
 "FHQ_ACR_BLK_HAMR_GL_SD",
-"vil_AK47_BASE",
+"AK_47_M",
 "vil_G36VA4Eot",
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
@@ -123,7 +123,7 @@ DZMSWeps1 = [
 ];
 
 DZMSWeps2 = [
-"AK_107_BASE",
+"vil_AK_107",
 "AK_107_GL_kobra",
 "RPK_74",
 "Saiga12K",
@@ -139,10 +139,10 @@ DZMSWeps2 = [
 "Sa58V_CCO_EP1",
 "SCAR_L_STD_Mk4CQT",
 "SCAR_L_CQC_EGLM_Holo",
-"SCAR_H_Base",
+"SCAR_H_CQC_CCO",
 "SCAR_H_STD_EGLM_Spect",
 "FHQ_ACR_BLK_HAMR_GL_SD",
-"vil_AK47_BASE",
+"AK_47_M",
 "vil_G36VA4Eot",
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
@@ -151,7 +151,7 @@ DZMSWeps2 = [
 ];
 
 DZMSWeps3 = [
-"AK_107_BASE",
+"vil_AK_107",
 "AK_107_GL_kobra",
 "RPK_74",
 "Saiga12K",
@@ -167,10 +167,10 @@ DZMSWeps3 = [
 "Sa58V_CCO_EP1",
 "SCAR_L_STD_Mk4CQT",
 "SCAR_L_CQC_EGLM_Holo",
-"SCAR_H_Base",
+"SCAR_H_CQC_CCO",
 "SCAR_H_STD_EGLM_Spect",
 "FHQ_ACR_BLK_HAMR_GL_SD",
-"vil_AK47_BASE",
+"AK_47_M",
 "vil_G36VA4Eot",
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
