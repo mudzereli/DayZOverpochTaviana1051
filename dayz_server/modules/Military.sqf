@@ -28,7 +28,7 @@ _loot_lists = [
 
 [
 ["BAF_LRR_scoped"],
-["5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1"A1","5Rnd_86x70_L115A1"]
+["5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1","5Rnd_86x70_L115A1"]
 ],
 
 [
