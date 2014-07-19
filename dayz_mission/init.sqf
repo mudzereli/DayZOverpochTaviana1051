@@ -133,6 +133,9 @@ call compile preprocessFileLineNumbers "addons\antipara\init.sqf";
 // overwrite unlock door to knockout
 player_unlockDoor = compile preprocessFileLineNumbers "overwrites\knockout\player_unlockDoor.sqf";
 
+// fix zombies not spawning with loot
+zombie_generate = compile preprocessFileLineNumbers "overwrites\loot\zombie_generate.sqf";
+
 // service point
 if(!isServer) then {execVM "addons\service_point\service_point.sqf";};
 
