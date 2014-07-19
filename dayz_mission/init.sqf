@@ -15,7 +15,7 @@ dayz_previousID = 0;
 //disable greeting menu 
 player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
-enableRadio false;
+enableRadio true;
 // May prevent "how are you civillian?" messages from NPC
 enableSentences false;
 
