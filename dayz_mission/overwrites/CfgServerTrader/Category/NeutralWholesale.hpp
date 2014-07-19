@@ -54,6 +54,11 @@ class Category_675 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
+	class ItemComboLock {
+		type = "trade_items";
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
+	};
 	class PartPlankPack {
 		type = "trade_items";
 		buy[] = {1,"ItemSilverBar10oz"};
@@ -121,6 +126,11 @@ class Category_636 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
+		class ItemComboLock {
+		type = "trade_items";
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
+	};
 	class PartPlankPack {
 		type = "trade_items";
 		buy[] = {1,"ItemSilverBar10oz"};
@@ -182,6 +192,11 @@ class Category_555 {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
+	};
+	class ItemComboLock {
+		type = "trade_items";
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
 	class PartPlankPack {
 		type = "trade_items";
