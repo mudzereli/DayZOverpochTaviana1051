@@ -26,7 +26,7 @@ class Category_569 {
 	};
 	class GAZ_Vodnik {
 		type = "trade_any_vehicle";
-		buy[] = {4,"ItemBriefcase100oz"};
+		buy[] = {5,"ItemBriefcase100oz"};
 		sell[] = {2,"ItemBriefcase100oz"};
 	};
 };
