@@ -88,8 +88,7 @@ _loot_box addMagazineCargoGlobal [_x,1];
 } forEach (_loot select 1);
  
 // Send Top Right message to users , requires Remote message script
-_hint = parseText format["<t align='center' color='#FFFF66' shadow='2' size='1.75'>Treasure Crate</t><br/><t align='center' color='#ffffff'>Bandits or Pirates? We found their treasure, Check your Map for the Location!</t>"];
-customRemoteMessage = ['hint', _hint];
+customRemoteMessage = ['titleText', "Treasure Crate: Bandits or Pirates? We found their treasure, Check your Map for the Location!"];
 publicVariable "customRemoteMessage";
 
 // Send center message to users 

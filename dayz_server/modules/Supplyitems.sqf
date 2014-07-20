@@ -124,8 +124,7 @@ _loot_box addMagazineCargoGlobal [_x,1];
 } forEach (_loot select 1);
  
 // Send Top Right message to users , requires Remote message script
-_hint = parseText format["<t align='center' color='#0D00FF' shadow='2' size='1.75'>Supply Crate</t><br/><t align='center' color='#ffffff'>UN Agency drops life-saving supplies for Survivors, Check your Map for the Location!</t>"];
-customRemoteMessage = ['hint', _hint];
+customRemoteMessage = ['titleText', "Supply Crate: UN Agency drops life-saving supplies for Survivors, Check your Map for the Location!"];
 publicVariable "customRemoteMessage";
 
 // Send center message to users 

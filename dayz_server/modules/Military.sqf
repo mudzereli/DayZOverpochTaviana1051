@@ -127,8 +127,7 @@ _loot_box addMagazineCargoGlobal [_x,1];
 } forEach (_loot select 1);
  
 // Send Top Right message to users , requires Remote message script
-_hint = parseText format["<t align='center' color='#FF0000' shadow='2' size='1.75'>Military Crate</t><br/><t align='center' color='#ffffff'>A special forces unit lost a precious cargo, Check your Map for the Location!</t>"];
-customRemoteMessage = ['hint', _hint];
+customRemoteMessage = ['titleText', "Military Crate: A special forces unit lost its precious cargo, Check your Map for the Location!"];
 publicVariable "customRemoteMessage";
 
 // Send center message to users 
