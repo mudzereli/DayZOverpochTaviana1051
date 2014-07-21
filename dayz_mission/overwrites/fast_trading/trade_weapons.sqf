@@ -94,6 +94,7 @@ if (player distance _oldPosition <= 2) then {
 };
 if (!_finished) exitWith { 
 	r_autoTrade = false;
+	DZE_ActionInProgress = false;
 	cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 };
 //### END MODIFIED CODE: fast trading
