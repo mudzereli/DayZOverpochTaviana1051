@@ -2550,7 +2550,7 @@ sell[] = {3,"ItemGoldBar10oz"};
 };
 class RH_m1st {
 type = "trade_weapons";
-buy[] = {1,"ItemGoldBar10oz"};
+buy[] = {1,"Itembriefcase100oz"};
 sell[] = {3,"ItemGoldBar10oz"};
 };
 class RH_m1stsp {
