@@ -90,6 +90,8 @@ DZMSWeps0 = [
 "vil_G36VA4Eot",
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
+"SCAR_H_LNG_Sniper",
+"vil_PKP",
 "M249_DZ"
 
 ];
@@ -119,6 +121,8 @@ DZMSWeps1 = [
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
 "M249_DZ",
+"SCAR_H_LNG_Sniper",
+"vil_PKP",
 "M4A3_CCO_EP1"
 ];
 
@@ -147,6 +151,8 @@ DZMSWeps2 = [
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
 "M249_DZ",
+"SCAR_H_LNG_Sniper",
+"vil_PKP",
 "M4A3_CCO_EP1"
 ];
 
@@ -175,6 +181,9 @@ DZMSWeps3 = [
 "M4A1_HWS_GL_camo",
 "SVD_CAMO",
 "M249_DZ",
+"SCAR_H_LNG_Sniper",
+"vil_PKP",
+"ksvk",
 "M4A3_CCO_EP1"
 ];
 
@@ -182,27 +191,27 @@ DZMSWeps3 = [
 // These are gear sets that will be randomly given to the AI
 // They are all the same, but can be customized.
 DZMSGear0 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar"],
 ["ItemKnife","ItemFlashlight"]
 ];
 
 DZMSGear1 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar","ItemGoldBar"],
 ["ItemKnife","ItemFlashlight"]
 ];
 
 DZMSGear2 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar","ItemGoldBar","ItemGoldBar"],
 ["ItemKnife","ItemFlashlight"]
 ];
 
 DZMSGear3 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","CinderBlocks","CinderBlocks"],
 ["ItemKnife","ItemFlashlight"]
 ];
 
 DZMSGear4 = [
-["ItemBandage","ItemBandage","ItemPainkiller"],
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
 ["ItemKnife","ItemFlashlight"]
 ];
 

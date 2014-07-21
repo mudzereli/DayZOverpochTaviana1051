@@ -68,10 +68,10 @@ DZMSSaveVehicles = false;
 // Adjust to your liking.
 
 //Armed Choppers (Huey)
-DZMSChoppers = ["UH1H_DZ","Mi17_DZ"];
+DZMSChoppers = ["UH1H_DZE","Mi17_DZE"];
 
 //Small Vehicles (Humvees)
-DZMSSmallVic = ["hilux1_civil_3_open_EP1","SUV_TK_CIV_EP1","HMMWV_DZ","UAZ_Unarmed_UN_EP1"];
+DZMSSmallVic = ["hilux1_civil_3_open_EP1","SUV_TK_CIV_EP1","HMMWV_DZ","UAZ_Unarmed_UN_EP1","LandRover_MG_TK_EP1_DZE","Offroad_DSHKM_GUE_DZE"];
 
 //Large Vehicles (Urals)
 DZMSLargeVic = ["Ural_TK_CIV_EP1","Ural_INS"];
@@ -86,7 +86,7 @@ Minor missions have less AI than Major missions, but have crates that reflect th
 Below is the array of mission file names and the minimum and maximum times they run.
 Do not edit the Arrays unless you know what you are doing.
 */
-DZMSMajorArray = ["SM1","SM2","SM3","SM4","SM5","SM6"];
+DZMSMajorArray = ["SM1","SM2","SM3","SM4","SM5","SM6","EM1"];
 DZMSMinorArray = ["SM1","SM2","SM3","SM4","SM5","SM6"];
 
 /////////////////////////////////////////////////////////////////////////////////////////////

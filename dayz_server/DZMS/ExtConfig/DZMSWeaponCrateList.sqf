@@ -17,6 +17,6 @@ DZMSprimaryList = ["M4A1_AIM_SD_camo","MG36","AKS_74_pso","RH_ctar21glacog","RH_
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // Epoch Supplies. If you have Epoch, these are the supplies in the Construction Crates
-DZMSConTools = ["ItemToolbox","ItemCrowbar","ItemKnife","ItemEtool","ItemHatchet_DZE","ItemMatchbox_DZE"];
+DZMSConTools = ["ItemToolbox","ItemCrowbar","ItemKnife","ItemEtool","ItemHatchet_DZE","ItemMatchbox_DZE","ItemSledge"];
 
 DZMSConSupply = ["CinderBlocks","MortarBucket","ItemTankTrap","ItemPole","PartGeneric","PartPlywoodPack","PartPlankPack","ItemTentOld","ItemTentDomed","ItemTentDomed2","ItemSandbag","ItemWire","workbench_kit","ItemGenerator"];
