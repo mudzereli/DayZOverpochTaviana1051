@@ -246,6 +246,23 @@ if (isServer && isNil "sm_done") then {
 						_object setvehiclelock "locked";
 					};
 					
+					//MODIFIED CODE>
+					{
+						if((_object distance [_x select 0,_x select 1,(getPosATL _object) select 2]) < 50) then {
+							_object setVehicleLock "UNLOCKED";
+						};
+					} forEach [
+						[11698.81,15210.121],	//	TraderCityLyepestok
+						[15309.663,9278.4912],	//	TraderCitySabina
+						[5538.7354,8762.2695],	//	TraderCityBilgrad 
+						[7376.6084,4296.5879],	//	TraderCityBranibor
+						[10948.426,654.90265],	//	BanditVendor
+						[15587.822,16394.049],	//	HeroVendor
+						[16555.732,10159.68],	//	AircraftDealer
+						[6815.0776,8534.1504]	//	AircraftDealer2
+					];
+					//<MODIFIED CODE
+
 					_totalvehicles = _totalvehicles + 1;
 
 					// total each vehicle
