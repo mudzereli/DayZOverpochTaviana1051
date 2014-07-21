@@ -84,6 +84,12 @@ class Category_663 {
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
+		class ItemSledge {
+		type = "trade_weapons";
+		buy[] = {4,"ItemSilverBar10oz"};
+		sell[] = {1,"ItemSilverBar10oz"};
+	};
+	
 };
 class Category_510 {
 	class ItemCompass {
@@ -169,6 +175,11 @@ class Category_510 {
 	class ItemFishingPole {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
+		sell[] = {1,"ItemSilverBar10oz"};
+	};
+	class ItemSledge {
+		type = "trade_weapons";
+		buy[] = {4,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
 };

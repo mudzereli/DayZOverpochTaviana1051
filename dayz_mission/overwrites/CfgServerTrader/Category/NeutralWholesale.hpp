@@ -69,6 +69,11 @@ class Category_675 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
+	class Metal_panel_kit {
+		type = "trade_items";
+		buy[] = {5,"ItemGoldBar10oz"};
+		sell[] = {4,"ItemGoldBar10oz"};
+	};
 };
 class Category_636 {
 	class bulk_15Rnd_9x19_M9SD {
@@ -141,6 +146,11 @@ class Category_636 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
+		class Metal_panel_kit {
+		type = "trade_items";
+		buy[] = {5,"ItemGoldBar10oz"};
+		sell[] = {4,"ItemGoldBar10oz"};
+	};
 };
 class Category_555 {
 	class bulk_15Rnd_9x19_M9SD {
@@ -212,5 +222,10 @@ class Category_555 {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
+	};
+		class Metal_panel_kit {
+		type = "trade_items";
+		buy[] = {5,"ItemGoldBar10oz"};
+		sell[] = {4,"ItemGoldBar10oz"};
 	};
 };

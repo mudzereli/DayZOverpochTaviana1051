@@ -27,17 +27,17 @@ class Category_686 {
 	class ItemTroutCooked {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
 	class ItemSeaBassCooked {
 		type = "trade_items";
-		buy[] = {3,"ItemGoldBar"};
-		sell[] = {2,"ItemGoldBar"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class ItemTunaCooked {
 		type = "trade_items";
-		buy[] = {4,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
+		buy[] = {7,"ItemGoldBar"};
+		sell[] = {7,"ItemGoldBar"};
 	};
 };
 class Category_580 {
@@ -64,22 +64,22 @@ class Category_580 {
 	class FoodrabbitCooked {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar10oz"};
-		sell[] = {1,"ItemSilverBar10oz"};
+		sell[] = {2,"ItemSilverBar10oz"};
 	};
 	class ItemTroutCooked {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
 	class ItemSeaBassCooked {
 		type = "trade_items";
-		buy[] = {3,"ItemGoldBar"};
-		sell[] = {2,"ItemGoldBar"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class ItemTunaCooked {
 		type = "trade_items";
-		buy[] = {4,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
+		buy[] = {7,"ItemGoldBar"};
+		sell[] = {7,"ItemGoldBar"};
 	};
 };
 class Category_634 {
@@ -111,16 +111,16 @@ class Category_634 {
 	class ItemTroutCooked {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
 	};
 	class ItemSeaBassCooked {
 		type = "trade_items";
-		buy[] = {3,"ItemGoldBar"};
-		sell[] = {2,"ItemGoldBar"};
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class ItemTunaCooked {
 		type = "trade_items";
-		buy[] = {4,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
+		buy[] = {7,"ItemGoldBar"};
+		sell[] = {7,"ItemGoldBar"};
 	};
 };

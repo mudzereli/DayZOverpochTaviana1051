@@ -91,7 +91,12 @@ class Category_526 {
 	};
 	class KSVK_DZE {
 		type = "trade_weapons";
-		buy[] = {3,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar10oz"};
+		buy[] = {1,"Itembriefcase100oz"};
+		sell[] = {6,"ItemGoldBar10oz"};
+	};
+	class M107_DZ {
+		type = "trade_weapons";
+		buy[] = {2,"Itembriefcase100oz"};
+		sell[] = {9,"ItemGoldBar10oz"};
 	};
 };

@@ -1,7 +1,7 @@
 class Category_527 {
 	class 20Rnd_9x39_SP5_VSS {
 		type = "trade_items";
-		buy[] = {3,"ItemGoldBar"};
+		buy[] = {1,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
 	class 8Rnd_B_Beneli_74Slug {
@@ -74,4 +74,10 @@ class Category_527 {
 		buy[] = {2,"ItemSilverBar10oz"};
 		sell[] = {1,"ItemSilverBar10oz"};
 	};
+	class 10Rnd_127x99_m107 {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {8,"ItemSilverBar10oz"};
+	};
+	
 };
