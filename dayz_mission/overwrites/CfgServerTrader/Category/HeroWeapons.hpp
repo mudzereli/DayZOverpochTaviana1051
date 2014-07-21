@@ -21,8 +21,8 @@ class Category_477 {
 	};
 	class BAF_LRR_scoped {
 		type = "trade_weapons";
-		buy[] = {4,"ItemGoldBar10oz"};
-		sell[] = {1,"ItemGoldBar10oz"};
+		buy[] = {2,"Itembriefcase100oz"};
+		sell[] = {8,"ItemGoldBar10oz"};
 	};
 	class FN_FAL {
 		type = "trade_weapons";
@@ -31,12 +31,12 @@ class Category_477 {
 	};
 	class Mk_48_DZ {
 		type = "trade_weapons";
-		buy[] = {2,"ItemGoldBar10oz"};
-		sell[] = {8,"ItemGoldBar"};
+		buy[] = {1,"Itembriefcase100oz"};
+		sell[] = {7,"ItemGoldBar10oz"};
 	};
 	class M240_DZ {
 		type = "trade_weapons";
-		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {5,"ItemGoldBar"};
+		buy[] = {7,"ItemGoldBar10oz"};
+		sell[] = {4,"ItemGoldBar10oz"};
 	};
 };
