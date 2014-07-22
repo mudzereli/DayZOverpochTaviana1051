@@ -7,7 +7,7 @@ waitUntil {!isNil "dayz_animalCheck"}; //remove this line completely to make it 
 sleep 10; //Wait in seconds before the credits start after player IS ingame
  
 _role1 = "Welcome to";
-_role1names = ["Your server name"];
+_role1names = ["Tac Ops Taviana Overpoch"];
 _role2 = "Admins";
 _role2names = ["Debo", "Triad", "Lucavi", "Taylor Swift"];
 _role3 = "Moderators";
