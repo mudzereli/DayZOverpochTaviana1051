@@ -130,6 +130,9 @@ call compile preprocessFileLineNumbers "addons\safezones\init.sqf";
 // delete unused parachutes
 call compile preprocessFileLineNumbers "addons\antipara\init.sqf";
 
+// scrolling credits
+call compile preprocessFileLineNumbers "addons\credits\init.sqf";
+
 // overwrite unlock door to knockout
 player_unlockDoor = compile preprocessFileLineNumbers "overwrites\knockout\player_unlockDoor.sqf";
 
