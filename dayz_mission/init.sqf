@@ -130,11 +130,17 @@ call compile preprocessFileLineNumbers "addons\safezones\init.sqf";
 // delete unused parachutes
 call compile preprocessFileLineNumbers "addons\antipara\init.sqf";
 
+// scrolling credits
+call compile preprocessFileLineNumbers "addons\credits\init.sqf";
+
 // overwrite unlock door to knockout
 player_unlockDoor = compile preprocessFileLineNumbers "overwrites\knockout\player_unlockDoor.sqf";
 
 // fix zombies not spawning with loot
 zombie_generate = compile preprocessFileLineNumbers "overwrites\loot\zombie_generate.sqf";
+
+// self actions
+fnc_usec_selfActions = compile preprocessFileLineNumbers "overwrites\fn_selfActions.sqf";
 
 // service point
 if(!isServer) then {execVM "addons\service_point\service_point.sqf";};
