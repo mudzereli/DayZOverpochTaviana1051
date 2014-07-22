@@ -9,9 +9,9 @@ sleep 10; //Wait in seconds before the credits start after player IS ingame
 _role1 = "Welcome to";
 _role1names = ["Tac Ops Taviana Overpoch"];
 _role2 = "Admins";
-_role2names = ["Debo", "Triad", "Lucavi", "Taylor Swift"];
+_role2names = ["Debo", "Triad", "Lucavi"];
 _role3 = "Moderators";
-_role3names = ["Red","Dirty Old Man","webber"];
+_role3names = ["Red","Dirty Old Man","webber","Taylor Swift"];
 _role4 = "Server Mods";
 _role4names = ["Fast Trading/Custom Traders", "Self Bloodbag", "Missions/Supply Drops", "Tow/Lift", "Take Clothes", "Service Points", "Suicide", "Safe Zones", "and more!"];
 _role5 = "Website";
