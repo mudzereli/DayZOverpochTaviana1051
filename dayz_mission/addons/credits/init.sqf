@@ -9,7 +9,7 @@ sleep 10; //Wait in seconds before the credits start after player IS ingame
 _role1 = "Welcome to";
 _role1names = ["Your server name"];
 _role2 = "Admins";
-_role2names = ["Debo", "Triad", "Lucavi"];
+_role2names = ["Debo", "Triad", "Lucavi", "Taylor Swift"];
 _role3 = "Moderators";
 _role3names = ["Red","Dirty Old Man","webber"];
 _role4 = "Server Mods";
