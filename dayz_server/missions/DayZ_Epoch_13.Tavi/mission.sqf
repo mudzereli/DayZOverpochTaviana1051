@@ -767,7 +767,7 @@ if (true) then
   [208,10965.5,661,0]
 ];
 {
-  _this = createAgent ["GUE_Woodlander2", [(_x select 1),(_x select 2),(_x select 3)], [], 0, "CAN_COLLIDE"];
+  _this = createAgent ["GUE_Soldier_2", [(_x select 1),(_x select 2),(_x select 3)], [], 0, "CAN_COLLIDE"];
   _this setDir (_x select 0);
   _this setVehicleInit "this allowDammage false; this disableAI 'FSM'; this disableAI 'MOVE'; this disableAI 'AUTOTARGET'; this disableAI 'TARGET'; this setBehaviour 'CARELESS'; this forceSpeed 0;";
   _this setUnitAbility 0.60000002;

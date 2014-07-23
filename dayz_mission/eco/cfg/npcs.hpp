@@ -66,7 +66,7 @@ class AllTrader {
 
 // Overwatch Trader
 
-class Worker3 {
+class US_Pilot_Light_EP1 {
 	items[] = {
 		"OverwatchHK416",
 		"OverwatchHK417",

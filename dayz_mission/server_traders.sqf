@@ -34,7 +34,7 @@ serverTraders = [
 "GUE_Soldier_2",
 //### BEGIN MODIFIED CODE: traders
 "US_Pilot_Light_EP1",
-"GUE_Woodlander2"
+"GUE_Soldier_2"
 //### END MODIFIED CODE: traders
 ];
 
