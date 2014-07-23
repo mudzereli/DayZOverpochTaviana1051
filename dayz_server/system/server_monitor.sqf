@@ -164,7 +164,10 @@ if (isServer && isNil "sm_done") then {
 			_object setDamage _damage;
 			
 			if ((typeOf _object) in dayz_allowedObjects) then {
-				if (DZE_GodModeBase) then {
+				//MODIFIED CODE> (indestructible)
+				//if (DZE_GodModeBase) then {
+				if (_object call DZE_GodModeBase) then {
+				//<MODIFIED CODE
 					_object addEventHandler ["HandleDamage", {false}];
 				} else {
 					_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];

@@ -56,10 +56,22 @@ DZE_BuildOnRoads = false; // Default: False
 	DZE_ForceNameTagsInTrader = true;
 	DZE_BuildingLimit = 200;
 	DZE_R3F_WEIGHT = false;
-	DZE_GodModeBase = true;
 	DZE_MissionLootTable = true;
 	DZE_DeathMsgGlobal = true;
 	DZE_ConfigTrader = true;
+	DZE_GodModeBase = {
+		(typeOf _this) in [
+			"MetalFloor_DZ",
+			"CinderWallHalf_DZ",
+			"CinderWall_DZ",
+			"CinderWallSmallDoorway_DZ",
+			"CinderWallDoorSmall_DZ",
+			"CinderWallDoorSmallLocked_DZ",
+			"CinderWallDoorway_DZ",
+			"CinderWallDoor_DZ",
+			"CinderWallDoorLocked_DZ"
+		]
+	};
 //### END MODIFIED CODE: config
 
 // DZEdebug = true;
