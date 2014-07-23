@@ -93,6 +93,9 @@ if (_characterID != "0") then
 	diag_log ("HIVE: WRITE: "+ str(_key));
 	#endif
 	_key call server_hiveWrite;
+	//MODIFIED CODE>
+	"Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['dayz_epoch','INSERT INTO player_bank (PlayerUID,Wealth) VALUES (''%1'',0) ON DUPLICATE KEY UPDATE Wealth=0']",_playerID];
+	//<MODIFIED CODE
 }
 else
 {

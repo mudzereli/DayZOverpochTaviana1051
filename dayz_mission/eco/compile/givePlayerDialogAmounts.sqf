@@ -1,0 +1,1 @@
+ctrlSetText [GivePlayerDialogPlayerBalance, format["%1 %2", [(player getVariable ['wealth', 0])] call BIS_fnc_numberText, EpochCurrency]];

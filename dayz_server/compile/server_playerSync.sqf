@@ -114,7 +114,7 @@ if (_characterID != "0") then {
 		_kills = 		["zombieKills",_character] call server_getDiff;
 		_killsB = 		["banditKills",_character] call server_getDiff;
 		_killsH = 		["humanKills",_character] call server_getDiff;
-		_headShots = 	["headShots",_character] call server_getDiff;
+		_headShots = 	["headshots",_character] call server_getDiff;
 		_humanity = 	["humanity",_character] call server_getDiff2;
 		//_humanity = 	_character getVariable ["humanity",0];
 		_character addScore _kills;		
@@ -190,6 +190,9 @@ if (_characterID != "0") then {
 				_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
 				//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
 				_key call server_hiveWrite;
+				//MODIFIED CODE>
+				"Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['dayz_epoch','INSERT INTO player_bank (PlayerUID,Wealth,Bank) VALUES (''%1'',%2,%3) ON DUPLICATE KEY UPDATE Wealth=%2, Bank=%3']",getPlayerUID _character,(_character getVariable["wealth",0]),(_character getVariable["bank",0])];
+				//<MODIFIED CODE
 			};
 		};
 

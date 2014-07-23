@@ -1,10 +1,11 @@
-private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC","_namespace"];
+private ["_characterID","_playerObj","_playerID","_spawnSelection","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_lastinstance","_friendlies","_randomSpot","_position","_debug","_distance","_hit","_fractures","_score","_findSpot","_pos","_isIsland","_w","_clientID","_spawnMC","_namespace"];
 
 //diag_log ("SETUP: attempted with " + str(_this));
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
 _playerID = getPlayerUID _playerObj;
+_spawnSelection = _this select 3; // added 4 spawnselection
 
 if (isNull _playerObj) exitWith {
 	diag_log ("SETUP INIT FAILED: Exiting, player object null: " + str(_playerObj));
@@ -132,13 +133,52 @@ if (count _medical > 0) then {
 	_playerObj setVariable ["USEC_inPain",false,true];
 	_playerObj setVariable ["messing",[0,0],true];
 };
-	
+
+//MODIFIED CODE>
+private["_results","_resultStr","_wealth","_bank"];
+_resultStr = "Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['dayz_epoch','SELECT Wealth, Bank from player_bank where PlayerUID = ''%1'' LIMIT 1']",getPlayerUID _playerObj];
+if(!(isNil "_resultStr") && {_resultStr != "[[]]"}) then {
+	_results = ((call compile _resultStr) select 0) select 0;
+	_wealth  = (_results select 0);
+	_bank    = (_results select 1);
+	if(((count _results) == 2) && {(typeName _wealth) == "STRING"} && {(typeName _bank) == "STRING"}) then {
+		_wealth = parseNumber _wealth;
+		_bank   = parseNumber _bank;
+		if(_bank >= 0 && {_wealth >= 0}) then {
+			_playerObj setVariable["wealth",_wealth,true];
+			_playerObj setVariable["bank",_bank,true];
+			_playerObj setVariable["wealth_CHK",_wealth,true];
+			_playerObj setVariable["bank_CHK",_bank,true];
+			diag_log text format["Loaded money data for player %1 (%2) -- Wealth = %3, Bank = %4!",name _playerObj,getPlayerUID _playerObj,_wealth,_bank];
+		} else {
+			diag_log text format["Invalid number data for player %1 (%2) -- %3!",name _playerObj,getPlayerUID _playerObj,_results,_resultStr];
+			_playerObj setVariable["wealth",0,true];
+			_playerObj setVariable["bank",0,true];
+			_playerObj setVariable["wealth_CHK",0,true];
+			_playerObj setVariable["bank_CHK",0,true];
+		};
+	} else {
+		diag_log text format["Corrupt money data for player %1 (%2) -- %3!",name _playerObj,getPlayerUID _playerObj,_resultStr];
+		_playerObj setVariable["wealth",0,true];
+		_playerObj setVariable["bank",0,true];
+		_playerObj setVariable["wealth_CHK",0,true];
+		_playerObj setVariable["bank_CHK",0,true];
+	};
+} else {
+	diag_log text format["Player %1 (%2) has no money stored in database. -- %3",name _playerObj,getPlayerUID _playerObj,_resultStr];
+	_playerObj setVariable["wealth",0,true];
+	_playerObj setVariable["bank",0,true];
+	_playerObj setVariable["wealth_CHK",0,true];
+	_playerObj setVariable["bank_CHK",0,true];
+};
+//<MODIFIED CODE
+
 if (count _stats > 0) then {	
 	//register stats
 	_playerObj setVariable["zombieKills",(_stats select 0),true];
-	_playerObj setVariable["headShots",(_stats select 1),true];
 	_playerObj setVariable["humanKills",(_stats select 2),true];
 	_playerObj setVariable["banditKills",(_stats select 3),true];
+	_playerObj setVariable["headShots",(_stats select 1),true];
 	_playerObj addScore (_stats select 1);
 	
 	//Save Score
@@ -192,14 +232,23 @@ if (_randomSpot) then {
 	//spawn into random
 	_findSpot = true;
 	_mkr = "";
+	_position = [0,0,0]; // clear
+
 	while {_findSpot} do {
 		_counter = 0;
-		while {_counter < 20 && _findSpot} do {
+		while {_counter < 20 and _findSpot} do {
 			// switched to floor
-			_mkr = "spawn" + str(floor(random _spawnMC));
+			if (_spawnSelection == 9) then {
+				// random spawn location selected, lets get the marker and spawn in somewhere
+				if (dayz_spawnselection == 1) then { _mkr = "spawn" + str(floor(random 6)); } else { _mkr = "spawn" + str(floor(random 5)); };
+			} else {
+				// spawn is not random, lets spawn in our location that was selected
+				_mkr = "spawn" + str(_spawnSelection);
+			};
+			//_mkr = "spawn" + str(floor(random _spawnMC));
 			_position = ([(getMarkerPos _mkr),0,spawnArea,10,0,2000,spawnShoremode] call BIS_fnc_findSafePos);
 			_isNear = count (_position nearEntities ["Man",100]) == 0;
-			_isZero = ((_position select 0) == 0) && ((_position select 1) == 0);
+			_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
 			//Island Check		//TeeChange
 			_pos 		= _position;
 			_isIsland	= false;		//Can be set to true during the Check
@@ -210,11 +259,11 @@ if (_randomSpot) then {
 				};
 			};
 			
-			if ((_isNear && !_isZero) || _isIsland) then {_findSpot = false};
+			if ((_isNear and !_isZero) || _isIsland) then {_findSpot = false};
 			_counter = _counter + 1;
 		};
 	};
-	_isZero = ((_position select 0) == 0) && ((_position select 1) == 0);
+	_isZero = ((_position select 0) == 0) and ((_position select 1) == 0);
 	_position = [_position select 0,_position select 1,0];
 	if (!_isZero) then {
 		//_playerObj setPosATL _position;
