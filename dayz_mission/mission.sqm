@@ -1204,7 +1204,7 @@ class Mission
 	{
 		//###BEGIN MODIFIED CODE: traders
 		//items=30;
-		items=30;
+		items=35;
 		//###END MODIFIED CODE: traders
 		class Item0
 		{
@@ -1423,6 +1423,46 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
+	    class Item30
+	    {
+	      position[]={11707.938, 0, 15225.799};
+	      name="Banker1";
+	      text="Banker";
+	      type="mil_dot";
+	      colorName="ColorOrange";
+	    };
+	    class Item31
+	    {
+	      position[]={5538.1587, 0, 8755.9873};
+	      name="Banker2";
+	      text="Banker";
+	      type="mil_dot";
+	      colorName="ColorOrange";
+	    };
+	    class Item32
+	    {
+	      position[]={7357.0015, 0, 4325.874};
+	      name="Banker3";
+	      text="Banker";
+	      type="mil_dot";
+	      colorName="ColorOrange";
+	    };
+	    class Item33
+	    {
+	      position[]={15299.092, 0, 9303.5088};
+	      name="Banker4";
+	      text="Banker";
+	      type="mil_dot";
+	      colorName="ColorOrange";
+	    };
+	    class Item34
+	    {
+	      position[]={10698.253, 0, 5983.9556};
+	      name="Banker5";
+	      text="Banker";
+	      type="mil_dot";
+	      colorName="ColorOrange";
+	    };		
 		//###END MODIFIED CODE: traders
 	};
 	class Sensors
