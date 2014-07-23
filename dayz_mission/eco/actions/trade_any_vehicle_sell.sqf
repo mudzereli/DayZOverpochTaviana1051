@@ -29,41 +29,20 @@ if (_qty < 1) exitWith {
 
 cutText ["Starting trade, stand still to complete trade.", "PLAIN DOWN"];
 
-// force animation 
-player playActionNow "Medic";
-
-r_interrupt = false;
-_animState = animationState player;
-r_doLoop = true;
-_started = false;
+//### BEGIN MODIFIED CODE: fast trading
+private["_newPosition","_finished","_oldPosition"];
+if(isNil "_oldPosition") then { _oldPosition = position player;};
 _finished = false;
-
-while {r_doLoop} do {
-	_animState = animationState player;
-	_isMedic = ["medic",_animState] call fnc_inString;
-	if (_isMedic) then {
-		_started = true;
-	};
-	if (_started and !_isMedic) then {
-		r_doLoop = false;
-		_finished = true;
-	};
-	if (r_interrupt) then {
-		r_doLoop = false;
-	};
-	sleep 0.1;
+sleep 2;
+if (player distance _oldPosition <= 2) then {
+	_finished = true;
 };
-r_doLoop = false;
-
 if (!_finished) exitWith { 
-	r_interrupt = false;
-	if (vehicle player == player) then {
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "stop";
-	};
-	cutText ["Canceled Trade." , "PLAIN DOWN"];
-	call _finish_trade;
+	r_autoTrade = false;
+	DZE_ActionInProgress = false;
+	cutText [(localize "str_epoch_player_106") , "PLAIN DOWN"];
 };
+//### END MODIFIED CODE: fast trading
 
 _qty = count _obj;
 if (_qty < 1) exitWith {

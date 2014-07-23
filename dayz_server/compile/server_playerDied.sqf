@@ -94,6 +94,7 @@ if (_characterID != "0") then
 	#endif
 	_key call server_hiveWrite;
 	//MODIFIED CODE>
+	diag_log text format["ARMA2NET: trying wipe wealth coins for (%1)",_playerID];
 	"Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['epoch_bank','INSERT INTO player_bank (PlayerUID,Wealth) VALUES (''%1'',0) ON DUPLICATE KEY UPDATE Wealth=0']",_playerID];
 	//<MODIFIED CODE
 }
