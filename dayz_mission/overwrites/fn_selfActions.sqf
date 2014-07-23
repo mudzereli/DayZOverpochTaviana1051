@@ -740,7 +740,9 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		};
 	};
 
+	//MODIFIED CODE> (remove traders)
 	// All Traders
+	/*
 	if (_isMan && !_isPZombie && _traderType in serverTraders) then {
 		
 		if (s_player_parts_crtl < 0) then {
@@ -787,7 +789,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		{player removeAction _x} count s_player_parts;s_player_parts = [];
 		s_player_parts_crtl = -1;
 	};
-
+	*/
 	
 	if(dayz_tameDogs) then {
 		
@@ -844,7 +846,93 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 			s_player_followdog = -1;
 		};
 	};
+	//MODIFIED CODE>
+	//eco
+	_SmeltingGoldRate = 900;
+	if (_isMan and !_isPZombie and _traderType in serverTraders) then {
+		if (s_player_parts_crtl < 0) then {
+			LastTraderMenu = (_traderMenu select 0);
+			_buy = player addAction [localize "STR_EPOCH_PLAYER_289", "eco\actions\player_trade.sqf",_traderType, 99, true, false, "",""];
+			s_player_parts set [count s_player_parts,_buy];
+			s_player_parts_crtl = 1;
+		};
+	} else {
+		{player removeAction _x} forEach s_player_parts;s_player_parts = [];
+		s_player_parts_crtl = -1;
+	};
 
+	private ["_body_money", "_isDead", "__player_cash", "_goldbar_credits", "_hasGoldBars", "_has10ozGoldBars"];
+	_body_money = _cursorTarget getVariable['wealth',-1];
+	_isDead = !_isAlive or (typeOf _cursorTarget == "GraveDZE");
+
+	if (_isDead and _body_money > 0) then {
+		if (s_take_cash < 0) then {
+	        s_take_cash = player addAction [format["Take %1 %2", _body_money, EpochCurrency], "eco\actions\player_takecash.sqf",_cursorTarget, 1, false, true, "",""];
+	    };
+	} else {
+	    player removeAction s_take_cash;
+	    s_take_cash = -1;
+	};
+
+	if (_isMan and _isAlive and !_isPZombie and _body_money > -1) then {
+		if (s_givemoney_dialog < 0) then {
+			s_givemoney_dialog = player addAction [format["Give Money to %1", (name _cursorTarget)], "eco\actions\player_givemoney.sqf",_cursorTarget, 3, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_givemoney_dialog;
+		s_givemoney_dialog = -1;
+	};
+
+	if (isNil "SmeltingInProgress") then {
+		SmeltingInProgress = false;
+	};
+
+	_player_money = player getVariable['wealth',0];
+	_player_cash = if (typeName _player_money == "STRING") then { parseNumber _player_money } else { _player_money };
+	
+	if (inflamed _cursorTarget and (_player_cash > _SmeltingGoldRate) and !SmeltingInProgress) then {
+		if (s_smelt_coins < 0) then {
+			if (__player_cash > 9000) then {
+				s_smelt_coins = player addAction [format["Smelt %1 %2 into a 10oz Gold Bar", (_SmeltingGoldRate * 10), EpochCurrency], "eco\actions\player_smeltcoins.sqf","ItemGoldBar10oz", 3, true, true, "", ""];
+			} else {
+				s_smelt_coins = player addAction [format["Smelt %1 %2 into a Gold Bar", _SmeltingGoldRate, EpochCurrency], "eco\actions\player_smeltcoins.sqf","ItemGoldBar", 3, true, true, "", ""];
+			};
+		};
+	} else {
+		player removeAction s_smelt_coins;
+		s_smelt_coins = -1;
+	};
+
+	_hasGoldBars = "ItemGoldBar" in _magazinesPlayer;
+	if (inflamed _cursorTarget and (_hasGoldBars) and !SmeltingInProgress) then {
+		if (s_smelt_bars < 0) then {
+			s_smelt_bars = player addAction [format["Smelt a Gold Bar into %1 %2", _SmeltingGoldRate, EpochCurrency], "eco\actions\player_smeltbars.sqf","ItemGoldBar", 3, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_smelt_bars;
+		s_smelt_bars = -1;
+	};
+	
+	_has10ozGoldBars = "ItemGoldBar10oz" in _magazinesPlayer;
+	if (inflamed _cursorTarget and (_has10ozGoldBars) and !SmeltingInProgress) then {
+		if (s_smelt_10bars < 0) then {
+			s_smelt_10bars = player addAction [format["Smelt a 10oz Gold Bar into %1 %2", (_SmeltingGoldRate * 10), EpochCurrency], "eco\actions\player_smeltbars.sqf","ItemGoldBar10oz", 3, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_smelt_10bars;
+		s_smelt_10bars = -1;
+	};
+
+	_isBankTrader = _cursorTarget;
+	if (_isMan and !_isPZombie and _traderType in bankTraders) then {
+		if (s_bank_dialog < 0) then {
+			s_bank_dialog = player addAction ["Bank", "eco\actions\player_bank.sqf",_traderType, 3, true, true, "", ""];
+		};
+	} else {
+		player removeAction s_bank_dialog;
+		s_bank_dialog = -1;
+	};
+	//<MODIFIED CODE
 } else {
 	//Engineering
 	{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
@@ -932,6 +1020,21 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	s_player_fuelauto = -1;
 	player removeAction s_player_fuelauto2;
 	s_player_fuelauto2 = -1;
+
+	//MODIFIED CODE> (eco)
+	player removeAction s_take_cash;
+    s_take_cash = -1;
+	player removeAction s_smelt_coins;
+	s_smelt_coins = -1;
+	player removeAction s_smelt_bars;
+	s_smelt_bars = -1;
+	player removeAction s_smelt_10bars;
+	s_smelt_10bars = -1;
+	player removeAction s_bank_dialog;
+	s_bank_dialog = -1;
+	player removeAction s_givemoney_dialog;
+	s_givemoney_dialog = -1;
+	//<MODIFIED CODE
 };
 
 

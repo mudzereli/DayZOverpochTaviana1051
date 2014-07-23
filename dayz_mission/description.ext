@@ -157,10 +157,10 @@ class DayZ_loadingScreen
 
 //### BEGIN MODIFIED CODE: towing
 #include "addons\R3F_ARTY_AND_LOG\desc_include.h"
-class RscTitles
-{
-	#include "addons\R3F_ARTY_AND_LOG\desc_rsct_include.h"
-};
+//class RscTitles
+//{
+//	#include "addons\R3F_ARTY_AND_LOG\desc_rsct_include.h"
+//};
 //### END MODIFIED CODE: towing
 
 //### BEGIN MODIFIED CODE: loot
@@ -168,5 +168,6 @@ class RscTitles
 //### END MODIFIED CODE: loot
 
 //### BEGIN MODIFIED CODE: config traders
- #include "overwrites\CfgServerTrader\cfgServerTrader.hpp"
+//#include "overwrites\CfgServerTrader\cfgServerTrader.hpp"
+#include "eco\cfg\config.hpp"
 //### END MODIFIED CODE: config traders

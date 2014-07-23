@@ -10,9 +10,9 @@ s_smelt_10bars 		= -1;
 s_bank_dialog 		= -1;
 s_givemoney_dialog	= -1;
 s_player_parts_crtl = -1;
-bankTraders 		= ["Rita_Ensler_EP1","RU_WorkWoman1"];
+bankTraders 		= ["Citizen3","Profiteer2"];
 
-fnc_usec_selfActions	    = compile preprocessFileLineNumbers "custom\fn_selfActions.sqf";
+fnc_usec_selfActions	    = compile preprocessFileLineNumbers "overwrites\fn_selfActions.sqf";
 player_humanityMorph        = compile preprocessFileLineNumbers "eco\compile\player_humanityMorph.sqf";
 
 BIS_fnc_numberDigits 	    = compile preprocessFileLineNumbers "eco\fnc\numberDigits.sqf";
@@ -42,9 +42,6 @@ GivePlayerDialogPlayerBalance 	= 14001;
 
 [] spawn {
 	waitUntil { sleep 1; !isNil ("PVDZE_plr_LoginRecord") };
-	if (player getVariable["randomSpot",false]) then {
-		
-    };
 	
 	5 cutRsc ["MTrader","PLAIN"];
 	while {true} do {

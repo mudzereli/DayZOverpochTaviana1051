@@ -136,7 +136,7 @@ if (count _medical > 0) then {
 
 //MODIFIED CODE>
 private["_results","_resultStr","_wealth","_bank"];
-_resultStr = "Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['dayz_epoch','SELECT Wealth, Bank from player_bank where PlayerUID = ''%1'' LIMIT 1']",getPlayerUID _playerObj];
+_resultStr = "Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['epoch_bank','SELECT Wealth, Bank from player_bank where PlayerUID = ''%1'' LIMIT 1']",getPlayerUID _playerObj];
 if(!(isNil "_resultStr") && {_resultStr != "[[]]"}) then {
 	_results = ((call compile _resultStr) select 0) select 0;
 	_wealth  = (_results select 0);

@@ -58,7 +58,7 @@ DZE_BuildOnRoads = false; // Default: False
 	DZE_R3F_WEIGHT = false;
 	DZE_MissionLootTable = true;
 	DZE_DeathMsgGlobal = true;
-	DZE_ConfigTrader = true;
+	DZE_ConfigTrader = false;
 	DZE_GodModeBase = {
 		(typeOf _this) in [
 			"MetalFloor_DZ",
@@ -144,6 +144,9 @@ call compile preprocessFileLineNumbers "addons\antipara\init.sqf";
 
 // scrolling credits
 call compile preprocessFileLineNumbers "addons\credits\init.sqf";
+
+// economy
+call compile preprocessFileLineNumbers "eco\client_init.sqf";
 
 // overwrite unlock door to knockout
 player_unlockDoor = compile preprocessFileLineNumbers "overwrites\knockout\player_unlockDoor.sqf";

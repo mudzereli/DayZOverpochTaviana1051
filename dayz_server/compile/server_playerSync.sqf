@@ -191,7 +191,7 @@ if (_characterID != "0") then {
 				//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
 				_key call server_hiveWrite;
 				//MODIFIED CODE>
-				"Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['dayz_epoch','INSERT INTO player_bank (PlayerUID,Wealth,Bank) VALUES (''%1'',%2,%3) ON DUPLICATE KEY UPDATE Wealth=%2, Bank=%3']",getPlayerUID _character,(_character getVariable["wealth",0]),(_character getVariable["bank",0])];
+				"Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['epoch_bank','INSERT INTO player_bank (PlayerUID,Wealth,Bank) VALUES (''%1'',%2,%3) ON DUPLICATE KEY UPDATE Wealth=%2, Bank=%3']",getPlayerUID _character,(_character getVariable["wealth",0]),(_character getVariable["bank",0])];
 				//<MODIFIED CODE
 			};
 		};
