@@ -1204,7 +1204,7 @@ class Mission
 	{
 		//###BEGIN MODIFIED CODE: traders
 		//items=30;
-		items=35;
+		items=34;
 		//###END MODIFIED CODE: traders
 		class Item0
 		{
@@ -1455,14 +1455,6 @@ class Mission
 	      type="mil_dot";
 	      colorName="ColorGreen";
 	    };
-	    class Item34
-	    {
-	      position[]={10698.253, 0, 5983.9556};
-	      name="Banker5";
-	      text="$";
-	      type="mil_dot";
-	      colorName="ColorGreen";
-	    };		
 		//###END MODIFIED CODE: traders
 	};
 	class Sensors
