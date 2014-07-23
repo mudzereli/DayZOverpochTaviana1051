@@ -58,8 +58,9 @@ if(_deployable call getPermanent) then {
     PVDZE_obj_Delete = [_cursorTarget getVariable["ObjectID","0"],_cursorTarget getVariable["ObjectUID","0"],player];
     publicVariableServer "PVDZE_obj_Delete";
 };
-deleteVehicle _cursorTarget;
 hideObject _cursorTarget;
+_cursorTarget setPos [0,0,0];
+deleteVehicle _cursorTarget;
 player removeAction (_deployable call getActionId);
 [_deployable,-1] call setActionId;
 DZE_PACKING = false;

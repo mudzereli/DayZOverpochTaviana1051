@@ -157,11 +157,14 @@ _IsNearPlot = count (_findNearestPole);
 // If item is plot pole && another one exists within 45m
 if(_isPole && _IsNearPlot > 0) exitWith {  DZE_ActionInProgress = false; cutText [(localize "str_epoch_player_44") , "PLAIN DOWN"]; };
 
+private["_exitWith"];
 if(_IsNearPlot == 0) then {
 
     // Allow building of plot
     if(_requireplot == 0 || _isLandFireDZ) then {
         _canBuildOnPlot = true;
+    } else {
+        _exitWith = (localize "STR_EPOCH_PLAYER_135");
     };
 
 } else {
@@ -180,6 +183,8 @@ if(_IsNearPlot == 0) then {
         // owner can build anything within his plot except other plots
         if(!_isPole) then {
             _canBuildOnPlot = true;
+        } else {
+            _exitWith = "You can't build a plot within your plot!";
         };
 
     } else {
@@ -189,13 +194,15 @@ if(_IsNearPlot == 0) then {
             // check if friendly to owner
             if(_ownerID in _friendlies) then {
                 _canBuildOnPlot = true;
+            } else {
+                _exitWith = "You can't build on someone else's plot!";
             };
         };
     };
 };
 
 // _message
-if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; cutText [format[(localize "STR_EPOCH_PLAYER_135"),_needText,_distance] , "PLAIN DOWN"]; };
+if(!_canBuildOnPlot) exitWith {  DZE_ActionInProgress = false; cutText [format[_exitWith,_needText,_distance] , "PLAIN DOWN"]; };
 
 _missing = "";
 _hasrequireditem = true;
@@ -367,6 +374,8 @@ if (_hasrequireditem) then {
             _dir = getDir _object;
             _position = getPosATL _object;
             //diag_log format["DEBUG BUILDING POS: %1", _position];
+            _object setPos[0,0,0];
+            hideObject _object;
             deleteVehicle _object;
         };
 
@@ -375,6 +384,8 @@ if (_hasrequireditem) then {
             _cancel = true;
             _reason = "You've moved to far away from where you started building (within 5 meters)";
             detach _object;
+            _object setPos[0,0,0];
+            hideObject _object;
             deleteVehicle _object;
         };
 
@@ -383,6 +394,8 @@ if (_hasrequireditem) then {
             _cancel = true;
             _reason = "Cannot move up || down more than 5 meters";
             detach _object;
+            _object setPos[0,0,0];
+            hideObject _object;
             deleteVehicle _object;
         };
 
@@ -391,6 +404,8 @@ if (_hasrequireditem) then {
             _cancel = true;
             _reason = (localize "str_epoch_player_43");
             detach _object;
+            _object setPos[0,0,0];
+            hideObject _object;
             deleteVehicle _object;
         };
 
@@ -399,6 +414,8 @@ if (_hasrequireditem) then {
             _cancel = true;
             _reason = "Cancelled building.";
             detach _object;
+            _object setPos[0,0,0];
+            hideObject _object;
             deleteVehicle _object;
         };
     };
@@ -607,11 +624,16 @@ if (_hasrequireditem) then {
                         clearWeaponCargoGlobal _tmpbuilt;
                         clearMagazineCargoGlobal _tmpbuilt;
                     };
+                    if(_index call getDeployableClearAmmo) then {
+                        _tmpbuilt setVehicleAmmo 0;
+                    };
                     player reveal _tmpbuilt;
                     DZE_DEPLOYING_SUCCESSFUL = true;
                     //### END MODIFIED CODE: player deploy
                 };
             } else {
+                _tmpbuilt setPos[0,0,0];
+                hideObject _tmpbuilt;
                 deleteVehicle _tmpbuilt;
                 cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];
             };
@@ -623,6 +645,8 @@ if (_hasrequireditem) then {
                 player playActionNow "stop";
             };
 
+            _tmpbuilt setPos[0,0,0];
+            hideObject _tmpbuilt;
             deleteVehicle _tmpbuilt;
 
             cutText [(localize "str_epoch_player_46") , "PLAIN DOWN"];

@@ -65,6 +65,16 @@ getDeployableBuildOnRoad = {
     (DZE_DEPLOYABLES select _this) select 12
 };
 
+/* what condition is used to determine whether or not the player sees the option? */
+getDeployableCondition = {
+    (DZE_DEPLOYABLES select _this) select 13
+};
+
+/* should vehicle ammo be cleared when spawned? */
+getDeployableClearAmmo = {
+    (DZE_DEPLOYABLES select _this) select 14
+};
+
 /* should players be allowed to pack deployables at all? */
 getDeployablePackAny = {
     ((_this call getDamageLimit) >= 0) || (!(isNull player) && {(getPlayerUID player) in DZE_DEPLOYABLE_ADMINS});   
