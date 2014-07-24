@@ -14,7 +14,7 @@
         ["Server Mods",["Fast Trading/Custom Traders", "Deployable Bike", "Self Bloodbag", "Missions/Supply Drops", "Tow/Lift", "Take Clothes", "Service Points", "Suicide", "Safe Zones", "and more!"],"#33b5e5"],
         ["Website",["tacticaloperationsunit.enjin.com"],"#33b5e5"],
         ["Special Thanks To",["all our donators"],"#33b5e5"],
-        ["Warning",["Bases must be maintained every 14 days (free).","Vehicles parked in trader cities are unlocked at server restarts","Tier 2 bases (cinder) are indestructible."],"#ff4444"]
+        ["Warning",["Changing clothes can cause strange character desync/glitches. This is a bug with Epoch 1.0.5.1 , not the server. We are looking into a fix.","Bases must be maintained every 14 days (free).","Vehicles parked in trader cities are unlocked at server restarts","Tier 2 bases (cinder) are indestructible."],"#ff4444"]
     ];
     {
         sleep 2;
