@@ -114,7 +114,7 @@ if (_characterID != "0") then {
 		_kills = 		["zombieKills",_character] call server_getDiff;
 		_killsB = 		["banditKills",_character] call server_getDiff;
 		_killsH = 		["humanKills",_character] call server_getDiff;
-		_headShots = 	["headshots",_character] call server_getDiff;
+		_headShots = 	["headShots",_character] call server_getDiff;
 		_humanity = 	["humanity",_character] call server_getDiff2;
 		//_humanity = 	_character getVariable ["humanity",0];
 		_character addScore _kills;		
