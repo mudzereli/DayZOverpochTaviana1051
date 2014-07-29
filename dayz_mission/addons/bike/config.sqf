@@ -30,20 +30,20 @@ DZE_DEPLOYABLES_CONFIG = [
     // deploy fortifications from etool 3 meters in front of player that are permanent until server restart
     //["ItemEtool",[0,3,0],5,-1,false,true,false,true,false,false,["Land_fort_rampart","Fort_StoneWall_EP1","Land_fort_bagfence_round"],[],["ItemEtool"],"true"],
     // deploy a permanent helicopter from ruby 5 meters in front of player that can be re-packed by anyone as long as it's under 10% damage
-    ["ItemRuby",[0,5,2],7,0.1,true,true,true,true,false,true,true,["AH6X_DZ","UH1Y_DZ"],[],["ItemRuby"],"true"],
+    //["ItemRuby",[0,5,2],7,0.1,true,true,true,true,false,true,true,["AH6X_DZ","UH1Y_DZ"],[],["ItemRuby"],"true"],
     // deploy military housing in front of the player that is permanent but can't be re-packed by anyone
-    ["ItemEmerald",[0,8,0],10,-1,false,false,false,true,true,false,false,["Barrack2","Land_fortified_nest_small_EP1"],[],["ItemEmerald"],"!(isNull player) && {(getPlayerUID player) in DZE_DEPLOYABLE_ADMINS}"],
-    ["ItemCitrine",[0,1,1],5,1,false,true,false,true,true,false,false,["Baseball","Loudspeaker","MetalBucket","Misc_Videoprojektor","Misc_Videoprojektor_platno","Misc_Wall_lamp","Notebook","SatPhone","Radio","SmallTV","Suitcase"],[],["ItemCitrine"],"true"],
+    //["ItemEmerald",[0,8,0],10,-1,false,false,false,true,true,false,false,["Barrack2","Land_fortified_nest_small_EP1"],[],["ItemEmerald"],"!(isNull player) && {(getPlayerUID player) in DZE_DEPLOYABLE_ADMINS}"],
+    //["ItemCitrine",[0,1,1],5,1,false,true,false,true,true,false,false,["Baseball","Loudspeaker","MetalBucket","Misc_Videoprojektor","Misc_Videoprojektor_platno","Misc_Wall_lamp","Notebook","SatPhone","Radio","SmallTV","Suitcase"],[],["ItemCitrine"],"true"],
     // deploy some housing items from parts piles in front of the player that are permanent but can be re-packed by anyone
-    ["PartGeneric",[0,2,0],5,1,true,true,false,true,true,false,false,["Desk","FoldChair","FoldTable","SmallTable","Barrel1","Garbage_can"],[],["PartGeneric"],"true"],
+    //["PartGeneric",[0,2,0],5,1,true,true,false,true,true,false,false,["Desk","FoldChair","FoldTable","SmallTable","Barrel1","Garbage_can"],[],["PartGeneric"],"true"],
     // deploy some housing items from wood piles in front of the player that are permanent but can be re-packed by anyone
-    ["PartWoodPile",[0,2,0],5,1,true,true,false,true,true,false,false,["Land_Rack_EP1","Land_Table_EP1","Land_Shelf_EP1","WoodChair","Park_bench2","Park_bench1"],[],["PartWoodPile"],"true"],
+    //["PartWoodPile",[0,2,0],5,1,true,true,false,true,true,false,false,["Land_Rack_EP1","Land_Table_EP1","Land_Shelf_EP1","WoodChair","Park_bench2","Park_bench1"],[],["PartWoodPile"],"true"],
     // deploy concrete barricades from cinderblocks 2m in front of the player, that are permanent and can only be re-packed by the person who placed them
     ["CinderBlocks",[0,2,0],5,1,false,true,false,false,false,true,true,["Hhedgehog_concrete","Land_CncBlock","Land_CncBlock_Stripes"],[],["CinderBlocks"],"true"],
     // deploy a mozzie in front of the player from a rotor/engine/fueltank
     ["ItemToolbox",[0,5,2],7,0.1,true,true,false,true,false,true,true,["CSJ_GyroC"],[],["PartVRotor","PartEngine","PartFueltank"],"true"],
-    ["ItemToolbox",[0,10,0],5,-1,false,true,false,true,true,false,false,["Land_Mil_Guardhouse"],[],["cinder_wall_kit","cinder_wall_kit","cinder_wall_kit","cinder_door_kit"],"false"],
-    ["ItemCrowbar",[0,6,0],5,-1,false,true,false,true,true,false,false,["Land_Misc_Cargo1Ao","Land_Misc_Cargo1Bo"],[],["metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit"],"true"]
+    //["ItemToolbox",[0,10,0],5,-1,false,true,false,true,true,false,false,["Land_Mil_Guardhouse"],[],["cinder_wall_kit","cinder_wall_kit","cinder_wall_kit","cinder_door_kit"],"false"],
+    //["ItemCrowbar",[0,6,0],5,-1,false,true,false,true,true,false,false,["Land_Misc_Cargo1Ao","Land_Misc_Cargo1Bo"],[],["metal_panel_kit","metal_panel_kit","metal_panel_kit","metal_panel_kit"],"true"]
     //["ItemEtool",[0,8,0],5,-1,false,true,true,true,false,false,["Land_Fort_Watchtower"],[],["forest_large_net_kit","ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"],"true"],
     //["ItemEtool",[0,8,0],5,-1,false,true,true,true,false,false,["Land_fortified_nest_big"],[],["ItemSandbagExLarge5x","ItemSandbagExLarge5x","ItemSandbagExLarge5x"],"true"],
     //["PartWoodPile",[0,2,0],5,1,true,true,true,true,false,false,["Pile_of_wood"],[],["PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile","PartWoodPile"],"true"],
