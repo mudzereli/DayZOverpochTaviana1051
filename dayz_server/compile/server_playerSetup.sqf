@@ -134,16 +134,18 @@ if (count _medical > 0) then {
 };
 
 //MODIFIED CODE>
-private["_results","_resultStr","_wealth","_bank"];
-diag_log text format["ARMA2NET: trying load player data for %1 (%2)",getPlayerUID _playerObj, name _playerObj];
-_resultStr = "Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['epoch_bank','SELECT Wealth, Bank from player_bank where PlayerUID = ''%1'' LIMIT 1']",getPlayerUID _playerObj];
+private["_results","_resultStr","_wealth","_bank","_cap"];
+//diag_log text format["ARMA2NET: trying load player data for %1 (%2)",getPlayerUID _playerObj, name _playerObj];
+_resultStr = "Arma2Net.Unmanaged" callExtension format["Arma2NETMySQLCommand ['epoch_bank','SELECT Wealth, Bank, TemporaryCap from player_bank where PlayerUID = ''%1'' LIMIT 1']",getPlayerUID _playerObj];
 if(!(isNil "_resultStr") && {_resultStr != "[[]]"}) then {
 	_results = ((call compile _resultStr) select 0) select 0;
 	_wealth  = (_results select 0);
 	_bank    = (_results select 1);
-	if(((count _results) == 2) && {(typeName _wealth) == "STRING"} && {(typeName _bank) == "STRING"}) then {
+	_cap     = (_results select 3);
+	if(((count _results) == 3) && {(typeName _wealth) == "STRING"} && {(typeName _bank) == "STRING"} && {(typeName _cap) == "STRING"}) then {
 		_wealth = parseNumber _wealth;
 		_bank   = parseNumber _bank;
+		BankMaxDeposit = parseNumber _cap;
 		if(_bank >= 0 && {_wealth >= 0}) then {
 			_playerObj setVariable["wealth",_wealth,true];
 			_playerObj setVariable["bank",_bank,true];
