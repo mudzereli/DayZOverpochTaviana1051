@@ -56,6 +56,11 @@ class Wholesale {
 			buy = 600;
 			sell = 600;
 		};
+		class metal_panel_kit {
+			type = "magazine";
+			buy = 35000;
+			sell = 6000;
+		};
 		class bulk_PartGeneric {
 			type = "magazine";
 			buy = 2700;

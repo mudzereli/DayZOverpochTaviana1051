@@ -81,6 +81,11 @@ class ToolbeltItems {
 			buy = 30;
 			sell = 20;
 		};
+		class ItemSledge {
+			type = "weapon";
+			buy = 40000;
+			sell = 6000;
+		};
 		class ItemFishingPole {
 			type = "weapon";
 			buy = 300;

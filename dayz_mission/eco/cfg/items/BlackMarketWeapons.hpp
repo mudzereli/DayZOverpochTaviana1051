@@ -91,6 +91,11 @@ class BlackMarketWeapons {
 			buy = 9000;
 			sell = 5400;
 		};
+		class m107_dz {
+			type = "weapon";
+			buy = 42000;
+			sell = 12000;
+		};
 		class SVD {
 			type = "weapon";
 			buy = 9000;

@@ -68,6 +68,9 @@ class AllTrader {
 
 class US_Pilot_Light_EP1 {
 	items[] = {
+	"OverwatchHK",
+	"OverwatchAK",
+	"OverwatchLMG",
 		"OverwatchHK416",
 		"OverwatchHK417",
 		"OverwatchTAR",
@@ -86,6 +89,9 @@ class US_Pilot_Light_EP1 {
 
 class Soldier_Sniper_PMC {
 	items[] = {
+	"OverwatchHK",
+	"OverwatchAK",
+	"OverwatchLMG",
 		"HeroAmmunition",
 		"HeroHelicopterArmed",
 		"HeroMilitaryArmed",
@@ -120,6 +126,9 @@ class Soldier_Sniper_PMC {
 
 class GUE_Woodlander1 {
 	items[] = {
+	"OverwatchHK",
+	"OverwatchAK",
+	"OverwatchLMG",
 		"BanditAmmunition",
 		"BanditHelicopterArmed",
 		"BanditMilitaryArmed",

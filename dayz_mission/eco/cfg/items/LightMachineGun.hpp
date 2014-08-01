@@ -1,20 +1,20 @@
 class LightMachineGun {
 	name = "Light Machine Gun";
 	class Items {
-				class M249_DZ {
+			class M249_DZ {
 			type = "weapon";
 			buy = 9000;
 			sell = 5400;
 		};
 		class M240_DZ {
 			type = "weapon";
-			buy = 9000;
+			buy = 16000;
 			sell = 5400;
 		};
 		class Mk_48_DZ {
 			type = "weapon";
-			buy = 9000;
-			sell = 5400;
+			buy = 19000;
+			sell = 9400;
 		};
 		class Pecheneg_DZ {
 			type = "weapon";
