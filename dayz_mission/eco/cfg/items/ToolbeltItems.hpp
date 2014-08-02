@@ -86,6 +86,16 @@ class ToolbeltItems {
 			buy = 40000;
 			sell = 6000;
 		};
+		class Chainsaw {
+			type = "weapon";
+			buy = 40000;
+			sell = 6000;
+		};
+		class ItemMixOil {
+			type = "magazine";
+			buy = 200;
+			sell = 60;
+		};
 		class ItemFishingPole {
 			type = "weapon";
 			buy = 300;

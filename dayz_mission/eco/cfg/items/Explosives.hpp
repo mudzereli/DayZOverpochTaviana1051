@@ -6,10 +6,15 @@ class Explosives {
 			buy = 3600;
 			sell = 1800;
 		};
+		class 1Rnd_HE_GP25 {
+			type = "magazine";
+			buy = 1600;
+			sell = 1000;
+		};
 		class 1Rnd_HE_M203 {
 			type = "magazine";
-			buy = 3600;
-			sell = 1800;
+			buy = 1600;
+			sell = 1000;
 		};
 	};
 };

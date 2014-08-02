@@ -68,6 +68,7 @@ class AllTrader {
 
 class US_Pilot_Light_EP1 {
 	items[] = {
+	"OverwatchGunAmmo",
 	"OverwatchHK",
 	"OverwatchAK",
 	"OverwatchLMG",
