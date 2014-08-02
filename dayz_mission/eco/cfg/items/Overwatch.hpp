@@ -341,8 +341,8 @@ class FHQ_ACR_SNW_HAMR_GL_SD_F { type = "weapon"; buy = 11800; sell = 5900; };
 class OverwatchSniper {
 name = "Sniper Variants";
 class Items {
-class ussr_cheytacm200{ type = "weapon"; buy = 36000; sell = 18000; };
-class ussr_cheytacm200sd{ type = "weapon"; buy = 42000; sell = 19000; };
+class ussr_cheytacm200{ type = "weapon"; buy = 46000; sell = 18000; };
+class ussr_cheytacm200_sd{ type = "weapon"; buy = 72000; sell = 19000; };
 class FHQ_MSR_DESERT { type = "weapon"; buy = 30000; sell = 15000; };
 class FHQ_MSR_SD_DESERT { type = "weapon"; buy = 35000; sell = 17500; };
 class FHQ_MSR_NV_DESERT { type = "weapon"; buy = 30000; sell = 15000; };
@@ -485,7 +485,6 @@ class	vil_Vikhr { type = "weapon"; buy = 6000; sell = 3000; };
 class	vil_9a91 { type = "weapon"; buy = 6000; sell = 3000; };
 class	vil_9a91_c { type = "weapon"; buy = 6000; sell = 3000; };
 class	vil_9a91_csd { type = "weapon"; buy = 6000; sell = 3000; };
-class	vil_vsk94 { type = "weapon"; buy = 6000; sell = 3000; };
 class	vil_Groza_HG { type = "weapon"; buy = 6000; sell = 3000; };
 class	vil_Groza_GL { type = "weapon"; buy = 6000; sell = 3000; };
 class	vil_Groza_SD { type = "weapon"; buy = 6000; sell = 3000; }
