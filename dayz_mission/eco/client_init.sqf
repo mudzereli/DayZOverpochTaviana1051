@@ -1,8 +1,8 @@
+BankMaxDeposit = 250000;
 if (isServer) exitWith {};
 MetalTradeMenuTID = ["Metals",693];
 EpochCurrency     = "Gold Coins";
 SmeltingGoldBarsToCoinsRate = 900;
-BankMaxDeposit 				= 250000;
 s_take_cash 		= -1;
 s_smelt_coins 		= -1;
 s_smelt_bars 		= -1;
@@ -42,7 +42,9 @@ GivePlayerDialogPlayerBalance 	= 14001;
 
 [] spawn {
 	waitUntil { sleep 1; !isNil ("PVDZE_plr_LoginRecord") };
-	
+	if(!(isNull player)) then {
+		BankMaxDeposit = player getVariable["bankCap",BankMaxDeposit];
+	};
 	5 cutRsc ["MTrader","PLAIN"];
 	while {true} do {
 		private ["_wealth","_bank"];

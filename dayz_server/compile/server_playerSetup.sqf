@@ -141,23 +141,32 @@ if(!(isNil "_resultStr") && {_resultStr != "[[]]"}) then {
 	_results = ((call compile _resultStr) select 0) select 0;
 	_wealth  = (_results select 0);
 	_bank    = (_results select 1);
-	_cap     = (_results select 3);
-	if(((count _results) == 3) && {(typeName _wealth) == "STRING"} && {(typeName _bank) == "STRING"} && {(typeName _cap) == "STRING"}) then {
-		_wealth = parseNumber _wealth;
-		_bank   = parseNumber _bank;
-		BankMaxDeposit = parseNumber _cap;
+	_bankCap = (_results select 2);
+	if(((count _results) == 3) && {(typeName _wealth) == "STRING"} && {(typeName _bank) == "STRING"} && {(typeName _bankCap) == "STRING"}) then {
+		_wealth  = parseNumber _wealth;
+		_bank    = parseNumber _bank;
+		_bankCap = parseNumber _bankCap;
 		if(_bank >= 0 && {_wealth >= 0}) then {
 			_playerObj setVariable["wealth",_wealth,true];
-			_playerObj setVariable["bank",_bank,true];
 			_playerObj setVariable["wealth_CHK",_wealth,true];
+			_playerObj setVariable["bank",_bank,true];
 			_playerObj setVariable["bank_CHK",_bank,true];
-			diag_log text format["Loaded money data for player %1 (%2) -- Wealth = %3, Bank = %4!",name _playerObj,getPlayerUID _playerObj,_wealth,_bank];
+			if(_bankCap > 0) then {
+				_playerObj setVariable["bankCap",_bankCap,true];
+				_playerObj setVariable["bankCap_CHK",_bankCap,true];
+			} else {
+				_playerObj setVariable["bankCap",BankMaxDeposit,true];
+				_playerObj setVariable["bankCap_CHK",BankMaxDeposit,true];
+			};
+			diag_log text format["Loaded money data for player %1 (%2) -- Wealth = %3, Bank = %4, Cap = %5!",name _playerObj,getPlayerUID _playerObj,_wealth,_bank,_bankCap];
 		} else {
 			diag_log text format["Invalid number data for player %1 (%2) -- %3!",name _playerObj,getPlayerUID _playerObj,_results,_resultStr];
 			_playerObj setVariable["wealth",0,true];
 			_playerObj setVariable["bank",0,true];
 			_playerObj setVariable["wealth_CHK",0,true];
 			_playerObj setVariable["bank_CHK",0,true];
+			_playerObj setVariable["bankCap",0,true];
+			_playerObj setVariable["bankCap_CHK",0,true];
 		};
 	} else {
 		diag_log text format["Corrupt money data for player %1 (%2) -- %3!",name _playerObj,getPlayerUID _playerObj,_resultStr];
@@ -165,6 +174,8 @@ if(!(isNil "_resultStr") && {_resultStr != "[[]]"}) then {
 		_playerObj setVariable["bank",0,true];
 		_playerObj setVariable["wealth_CHK",0,true];
 		_playerObj setVariable["bank_CHK",0,true];
+		_playerObj setVariable["bankCap",0,true];
+		_playerObj setVariable["bankCap_CHK",0,true];
 	};
 } else {
 	diag_log text format["Player %1 (%2) has no money stored in database. -- %3",name _playerObj,getPlayerUID _playerObj,_resultStr];
@@ -172,6 +183,8 @@ if(!(isNil "_resultStr") && {_resultStr != "[[]]"}) then {
 	_playerObj setVariable["bank",0,true];
 	_playerObj setVariable["wealth_CHK",0,true];
 	_playerObj setVariable["bank_CHK",0,true];
+	_playerObj setVariable["bankCap",0,true];
+	_playerObj setVariable["bankCap_CHK",0,true];	
 };
 //<MODIFIED CODE
 
