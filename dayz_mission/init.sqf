@@ -52,6 +52,8 @@ MaxDynamicDebris = 100;
 dayz_sellDistance_vehicle = 30;
 DZE_BuildOnRoads = false;
 DynamicVehicleDamageLow = 70;
+DZE_ConfigTrader = true;
+DZE_ForceNameTagsOff = true;
 //<MODIFIED CODE: variables
 
 // DZEdebug = true;
