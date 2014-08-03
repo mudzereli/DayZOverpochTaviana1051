@@ -108,7 +108,7 @@ class CfgBuildingLoot {
         zombieClass = {"z_doctor", "z_doctor", "z_doctor"};
         lootChance = 1;
         lootPos = {};
-        lootType = {{"", "trash", 0.100000}, {"", "hospital", 0.700000}, {"MedBox0", "object", 0.200000}};
+        lootType = {{"", "trash", 0.28}, {"", "hospital", 0.700000}, {"MedBox0", "object", 0.02}};
         lootTypeSmall = {{"", "trash", 0.100000}, {"", "hospital", 0.900000}};
     };
 
