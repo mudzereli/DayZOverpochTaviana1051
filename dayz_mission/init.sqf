@@ -47,13 +47,16 @@ DynamicVehicleDamageHigh = 90; // Default: 100
 DZE_BuildOnRoads = false; // Default: False
 
 //>MODIFIED CODE: variables
-MaxVehicleLimit = 50;
+MaxVehicleLimit = 150;
 MaxDynamicDebris = 100;
 dayz_sellDistance_vehicle = 30;
 DZE_BuildOnRoads = false;
 DynamicVehicleDamageLow = 70;
 DZE_ConfigTrader = true;
+DZE_SelfTransfuse = true;
+dayz_tameDogs = true;
 DZE_ForceNameTagsOff = true;
+DZE_R3F_WEIGHT = false;
 //<MODIFIED CODE: variables
 
 // DZEdebug = true;

@@ -149,6 +149,9 @@ class DayZ_loadingScreen
 	};
 };
 
-//>MODIFIED CODE: config traders
+//>MODIFIED CODE: config
 #include "CfgServerTrader\cfgServerTrader.hpp"
-//<MODIFIED CODE: config traders
+#include "CfgLoot\CfgLoot.hpp"
+#include "CfgLoot\CfgLootSmall.hpp"
+#include "CfgLoot\CfgBuildingLoot.hpp"
+//<MODIFIED CODE: config
