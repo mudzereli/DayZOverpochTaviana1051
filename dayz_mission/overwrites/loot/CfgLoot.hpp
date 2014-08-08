@@ -786,16 +786,16 @@ class CfgLoot {
 	{"DZ_Assault_Pack_EP1",0.22},
 	{"DZ_Czech_Vest_Puch",0.2},
 	{"DZ_TerminalPack_EP1",0.18},
-	{"DZ_ALICE_Pack_EP1",0.16},
+	{"DZ_ALICE_Pack_EP1",0.25},
 	{"DZ_TK_Assault_Pack_EP1",0.13},
-	{"DZ_CompactPack_EP1",0.11}
+	{"DZ_CompactPack_EP1",0.25}
 	};
 	militarybackpacks[] = {
-	{"DZ_British_ACU",0.3},
-	{"DZ_GunBag_EP1",0.25},
-	{"DZ_CivilBackpack_EP1",0.2},
-	{"DZ_Backpack_EP1",0.15},
-	{"DZ_LargeGunBag_EP1",0.1}
+	{"DZ_British_ACU",0.4},
+	{"DZ_GunBag_EP1",0.3},
+	{"DZ_CivilBackpack_EP1",0.3},
+	{"DZ_Backpack_EP1",0.25},
+	{"DZ_LargeGunBag_EP1",0.25}
 	};
 	militaryammo[] = {
 	{"2000Rnd_762x51_M134",0.1},

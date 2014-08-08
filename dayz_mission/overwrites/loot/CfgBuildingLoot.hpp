@@ -152,8 +152,8 @@ class CfgBuildingLoot {
 			{"ItemWire","magazine",0.01},
 			{"ItemTankTrap","magazine",0.04},
 			{"ItemKeyKit","weapon",0.01},
-			{"CinderBlocks","magazine",0.03},
-			{"MortarBucket","magazine",0.01}
+			{"CinderBlocks","magazine",0.08},
+			{"MortarBucket","magazine",0.05}
 		};
 		lootTypeSmall[] = {
 			{ "","generic",0.5 },
@@ -241,7 +241,7 @@ class CfgBuildingLoot {
 			{"ItemKnife","generic",0.02},
 			{"ItemMatchbox_DZE","generic",0.04},
 			{"","generic",0.04},
-			{"backpacks","backpacks",0.07},
+			{"backpacks","backpacks",0.17},
 			{"tents","tents",0.01},
 			{"","food",0.3},
 			{"","trash",0.17},
@@ -345,7 +345,7 @@ class CfgBuildingLoot {
 			{"ItemFlashlightRed","military",0.04},
 			{"ItemKnife","military",0.01},
 			{"ItemGPS","weapon",0.01},
-			{"militarybackpacks","militarybackpacks",0.05},
+			{"militarybackpacks","militarybackpacks",0.1},
 			{"","medical",0.03},
 			{"","generic",0.1},
 			{"","military",0.3},
@@ -477,7 +477,7 @@ class CfgBuildingLoot {
 			{"ItemKnife","military",0.01},
 			{"ItemGPS","weapon",0.01},
 			{"Binocular_Vector","military",0.01},
-			{"militarybackpacks","militarybackpacks",0.04},
+			{"militarybackpacks","militarybackpacks",0.1},
 			{"","medical",0.08},
 			{"","generic",0.3},
 			{"","military",0.01},
