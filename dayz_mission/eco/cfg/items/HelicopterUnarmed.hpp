@@ -23,18 +23,18 @@ class HelicopterUnarmed {
 		};
 		class CSJ_GyroC {
 			type = "vehicle";
-			buy = 3600;
-			sell = 1800;
+			buy = 18000;
+			sell = 9000;
 		};
 		class CSJ_GyroCover {
 			type = "vehicle";
-			buy = 3600;
-			sell = 1800;
+			buy = 18000;
+			sell = 9000;
 		};
 		class CSJ_GyroP {
 			type = "vehicle";
-			buy = 4500;
-			sell = 2700;
+			buy = 27000;
+			sell = 13000;
 		};
 		class pook_H13_medevac {
 			type = "vehicle";

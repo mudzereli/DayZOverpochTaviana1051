@@ -51,10 +51,5 @@ class BikesandATV {
 			buy = 9000;
 			sell = 4500;
 		};
-		class CSJ_GyroC {
-			type = "vehicle";
-			buy = 3600;
-			sell = 1800;
-		};
 	};
 };
