@@ -24,7 +24,7 @@ class HelicopterUnarmed {
 		class CSJ_GyroC {
 			type = "vehicle";
 			buy = 18000;
-			sell = 9000;
+			sell = 1;
 		};
 		class CSJ_GyroCover {
 			type = "vehicle";
