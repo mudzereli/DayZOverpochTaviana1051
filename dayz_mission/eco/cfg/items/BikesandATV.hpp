@@ -13,37 +13,37 @@ class BikesandATV {
 		};
 		class TT650_Civ {
 			type = "vehicle";
-			buy = 1800;
+			buy = 3600;
 			sell = 900;
 		};
 		class TT650_Ins {
 			type = "vehicle";
-			buy = 1800;
+			buy = 3600;
 			sell = 900;
 		};
 		class TT650_TK_CIV_EP1 {
 			type = "vehicle";
-			buy = 1800;
+			buy = 3600;
 			sell = 900;
 		};
 		class ATV_CZ_EP1 {
 			type = "vehicle";
-			buy = 1800;
+			buy = 3600;
 			sell = 900;
 		};
 		class ATV_US_EP1 {
 			type = "vehicle";
-			buy = 1800;
+			buy = 3600;
 			sell = 900;
 		};
 		class M1030_US_DES_EP1 {
 			type = "vehicle";
-			buy = 1800;
+			buy = 3600;
 			sell = 900;
 		};
 		class Old_moto_TK_Civ_EP1 {
 			type = "vehicle";
-			buy = 1800;
+			buy = 3600;
 			sell = 900;
 		};
 		class tractor {
