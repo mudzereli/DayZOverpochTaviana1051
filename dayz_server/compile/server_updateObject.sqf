@@ -18,7 +18,8 @@ _firstTime = false;
 _objectID =	_object getVariable ["ObjectID","0"];
 _uid = 		_object getVariable ["ObjectUID","0"];
 
-if ((typeName _objectID != "string") || (typeName _uid != "string")) then
+//>MODIFIED CODE: null object ID fix
+if ((isNil "_objectID") || {typeName _objectID != "string"} || {typeName _uid != "string"}) then
 { 
     diag_log(format["Non-string Object: ID %1 UID %2", _objectID, _uid]);
     //force fail
@@ -62,6 +63,8 @@ _object_position = {
 
 _object_inventory = {
 	private["_inventory","_previous","_key"];
+		//>MODIFIED CODE: exit if null object
+		if(isNull _object) exitWith {};
 		_inventory = [
 			getWeaponCargo _object,
 			getMagazineCargo _object,

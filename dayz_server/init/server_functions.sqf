@@ -558,6 +558,10 @@ server_getDiff =	{
 	_object = 	_this select 1;
 	_vNew = 	_object getVariable[_variable,0];
 	_vOld = 	_object getVariable[(_variable + "_CHK"),_vNew];
+	//>MODIFIED CODE: nil check
+	if(isNil "_vOld") then {
+		_vOld = vNew;
+	};
 	_result = 	0;
 	if (_vNew < _vOld) then {
 		//JIP issues
