@@ -152,7 +152,7 @@ class DayZ_loadingScreen
 };
 
 //### BEGIN MODIFIED CODE: snap pro
-//#include "custom\snap_pro\snappoints.hpp"
+#include "custom\snap_pro\snappoints.hpp"
 //### END MODIFIED CODE: snap pro
 
 //### BEGIN MODIFIED CODE: towing

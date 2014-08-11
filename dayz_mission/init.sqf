@@ -87,7 +87,7 @@ progressLoadingScreen 0.4;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";				//Compile regular functions
 //### BEGIN MODIFIED CODE: addons 
 // snap build
-//call compile preprocessFileLineNumbers "custom\compiles.sqf";
+call compile preprocessFileLineNumbers "custom\compiles.sqf";
 // deployable bike
 call compile preprocessFileLineNumbers "addons\bike\init.sqf";
 //### END MODIFIED CODE: addons 
