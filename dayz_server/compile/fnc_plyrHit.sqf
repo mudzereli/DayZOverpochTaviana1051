@@ -10,7 +10,7 @@ if ((owner _victim) == (owner _attacker)) exitWith {
 
 _weapon = weaponState _attacker;
 //>MODIFIED CODE: isNil check
-if(!(isNil "_weapon")) {
+if(!(isNil "_weapon")) then {
     if (_weapon select 0 == "Throw") then 
     {
         _weapon = _weapon select 3;
