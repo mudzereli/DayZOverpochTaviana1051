@@ -1,4 +1,5 @@
 [] spawn { 
+    if(isServer) exitWith {};
     private["_cat","_info","_color","_text","_time"];
     _time = 6; //how long one role should stay on screen. Use value from 0 to 10 where 0 is almost instant transition to next role
     //NOTE: Above value is not in seconds. It is percentage. Default: 6
