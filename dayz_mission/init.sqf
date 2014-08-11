@@ -59,6 +59,7 @@ DZE_BuildOnRoads = false; // Default: False
 	DZE_MissionLootTable = true;
 	DZE_DeathMsgGlobal = true;
 	DZE_ConfigTrader = false;
+	MaxDynamicDebris = 0;
 	DZE_GodModeBase = {
 		(typeOf _this) in [
 			"MetalFloor_DZ",
