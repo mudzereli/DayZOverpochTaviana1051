@@ -16,8 +16,8 @@ DZMSSkills0 = [
 	["aimingShake",0.85,0.95],
 	["aimingSpeed",0.80,0.90],
 	["endurance",0.80,0.90],
-	["spotDistance",0.70,0.85],
-	["spotTime",0.70,0.85],
+	["spotDistance",0.70,1.00],
+	["spotTime",0.70,1.00],
 	["courage",0.80,1.00],
 	["reloadSpeed",0.80,0.90],
 	["commanding",0.80,0.90],
@@ -31,7 +31,7 @@ DZMSSkills1 = [
 	["endurance",0.55,0.65],
 	["spotDistance",0.45,0.60],
 	["spotTime",0.45,0.60],
-	["courage",0.55,0.75],
+	["courage",0.85,1.00],
 	["reloadSpeed",0.60,0.70],
 	["commanding",0.55,0.65],
 	["general",0.55,0.75]
@@ -42,8 +42,8 @@ DZMSSkills2 = [
 	["aimingShake",0.85,0.95],
 	["aimingSpeed",0.80,0.90],
 	["endurance",0.80,0.90],
-	["spotDistance",0.70,0.85],
-	["spotTime",0.70,0.85],
+	["spotDistance",0.70,1.00],
+	["spotTime",0.70,1.00],
 	["courage",0.80,1.00],
 	["reloadSpeed",0.80,0.90],
 	["commanding",0.80,0.90],
@@ -55,8 +55,8 @@ DZMSSkills3 = [
 	["aimingShake",0.85,0.95],
 	["aimingSpeed",0.80,0.90],
 	["endurance",0.80,0.90],
-	["spotDistance",0.70,0.85],
-	["spotTime",0.70,0.85],
+	["spotDistance",0.70,1.00],
+	["spotTime",0.70,1.00],
 	["courage",0.80,1.00],
 	["reloadSpeed",0.80,0.90],
 	["commanding",0.80,0.90],
@@ -191,13 +191,13 @@ DZMSWeps3 = [
 // These are gear sets that will be randomly given to the AI
 // They are all the same, but can be customized.
 DZMSGear0 = [
-["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
-["ItemKnife","ItemFlashlight","metal_panel_kit"]
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz"],
+["ItemKnife","ItemFlashlight"]
 ];
 
 DZMSGear1 = [
-["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
-["ItemKnife","ItemFlashlight","metal_panel_kit"]
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz"],
+["ItemKnife","ItemFlashlight"]
 ];
 
 DZMSGear2 = [
@@ -206,13 +206,13 @@ DZMSGear2 = [
 ];
 
 DZMSGear3 = [
-["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
-["ItemKnife","ItemFlashlight","metal_panel_kit"]
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz"],
+["ItemKnife","ItemFlashlight"]
 ];
 
 DZMSGear4 = [
-["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
-["ItemKnife","ItemFlashlight","metal_panel_kit"]
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit","metal_panel_kit"],
+["ItemKnife","ItemFlashlight"]
 ];
 
 ////////////////////////////////////////////////////////////
