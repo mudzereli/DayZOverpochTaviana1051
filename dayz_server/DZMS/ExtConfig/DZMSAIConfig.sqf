@@ -12,16 +12,16 @@ DZMSBanditSkins = ["Bandit1_DZ","BanditW1_DZ"];
 ////////////////////////
 // Array of AI Skills
 DZMSSkills0 = [
-	["aimingAccuracy",0.10,0.125],
-	["aimingShake",0.45,0.55],
-	["aimingSpeed",0.45,0.55],
-	["endurance",0.40,0.50],
-	["spotDistance",0.30,0.45],
-	["spotTime",0.30,0.45],
-	["courage",0.40,0.60],
-	["reloadSpeed",0.50,0.60],
-	["commanding",0.40,0.50],
-	["general",0.40,0.60]
+	["aimingAccuracy",0.6,0.85],
+	["aimingShake",0.85,0.95],
+	["aimingSpeed",0.80,0.90],
+	["endurance",0.80,0.90],
+	["spotDistance",0.70,0.85],
+	["spotTime",0.70,0.85],
+	["courage",0.80,1.00],
+	["reloadSpeed",0.80,0.90],
+	["commanding",0.80,0.90],
+	["general",0.80,1.00]
 ];
 
 DZMSSkills1 = [
@@ -38,20 +38,20 @@ DZMSSkills1 = [
 ];
 
 DZMSSkills2 = [
-	["aimingAccuracy",0.15,0.20],
-	["aimingShake",0.75,0.85],
-	["aimingSpeed",0.70,0.80],
-	["endurance",0.70,0.80],
-	["spotDistance",0.60,0.75],
-	["spotTime",0.60,0.75],
-	["courage",0.70,0.90],
-	["reloadSpeed",0.70,0.80],
-	["commanding",0.70,0.90],
-	["general",0.70,0.90]
+	["aimingAccuracy",0.50,0.65],
+	["aimingShake",0.85,0.95],
+	["aimingSpeed",0.80,0.90],
+	["endurance",0.80,0.90],
+	["spotDistance",0.70,0.85],
+	["spotTime",0.70,0.85],
+	["courage",0.80,1.00],
+	["reloadSpeed",0.80,0.90],
+	["commanding",0.80,0.90],
+	["general",0.80,1.00]
 ];
 
 DZMSSkills3 = [	
-	["aimingAccuracy",0.20,0.25],
+	["aimingAccuracy",0.60,0.85],
 	["aimingShake",0.85,0.95],
 	["aimingSpeed",0.80,0.90],
 	["endurance",0.80,0.90],
@@ -191,13 +191,13 @@ DZMSWeps3 = [
 // These are gear sets that will be randomly given to the AI
 // They are all the same, but can be customized.
 DZMSGear0 = [
-["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar"],
-["ItemKnife","ItemFlashlight"]
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
+["ItemKnife","ItemFlashlight","metal_panel_kit"]
 ];
 
 DZMSGear1 = [
-["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar","ItemGoldBar"],
-["ItemKnife","ItemFlashlight"]
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
+["ItemKnife","ItemFlashlight","metal_panel_kit"]
 ];
 
 DZMSGear2 = [
@@ -206,21 +206,18 @@ DZMSGear2 = [
 ];
 
 DZMSGear3 = [
-["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","CinderBlocks","CinderBlocks"],
-["ItemKnife","ItemFlashlight"]
+["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
+["ItemKnife","ItemFlashlight","metal_panel_kit"]
 ];
 
 DZMSGear4 = [
 ["ItemBandage","ItemBandage","ItemPainkiller","ItemGoldBar10oz","ItemGoldBar10oz","Cinder_Wall_kit"],
-["ItemKnife","ItemFlashlight"]
+["ItemKnife","ItemFlashlight","metal_panel_kit"]
 ];
 
 ////////////////////////////////////////////////////////////
 // These are the backpacks that can be assigned to AI units.
 DZMSPacklist = [
-"DZ_Patrol_Pack_EP1",
-"DZ_Assault_Pack_EP1",
-"DZ_Czech_Vest_Puch",
 "DZ_ALICE_Pack_EP1",
 "DZ_TK_Assault_Pack_EP1",
 "DZ_British_ACU",

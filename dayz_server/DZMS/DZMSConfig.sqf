@@ -16,7 +16,7 @@ DZMSUseNVG = false;
 
 // Do you want AI to use RPG7V's?
 //(Only one unit per group spawn will have one)
-DZMSUseRPG = false;
+DZMSUseRPG = true;
 
 // Do you want AI kills to count as bandit kills?
 DZMSCntBanditKls = false;
