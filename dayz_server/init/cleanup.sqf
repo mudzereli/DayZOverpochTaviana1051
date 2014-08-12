@@ -50,7 +50,7 @@ if (isServer) then {
                             };
                         };
                 sleep 0.001;
-                } forEach _missionObjs;
+                } forEach allMissionObjects "All";
                 if (_delQty > 0) then {
                     _qty = count _lootpiles;
                     diag_log (format["SCOTTY tm CLEANUP: Deleted %1 Loot Piles out of %2",_delQty,_qty]);
