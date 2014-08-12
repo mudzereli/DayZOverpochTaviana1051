@@ -48,11 +48,11 @@ sleep 5;
 
 //DZMSAISpawn spawns AI to the mission.
 //Usage: [_coords, count, skillLevel, unitArray]
-[_coords,6,1,"DZMSUnitsMajor"] call DZMSAISpawn;
+[_coords,2,1,"DZMSUnitsMajor"] call DZMSAISpawn;
 sleep 5;
-[_coords,6,1,"DZMSUnitsMajor"] call DZMSAISpawn;
+[_coords,2,1,"DZMSUnitsMajor"] call DZMSAISpawn;
 sleep 5;
-[_coords,4,1,"DZMSUnitsMajor"] call DZMSAISpawn;
+[_coords,2,1,"DZMSUnitsMajor"] call DZMSAISpawn;
 sleep 5;
 
 _loop = true;
