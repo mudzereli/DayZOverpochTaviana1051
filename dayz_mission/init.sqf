@@ -60,7 +60,7 @@ DZE_BuildOnRoads = false; // Default: False
 	DZE_DeathMsgGlobal = true;
 	DZE_ConfigTrader = false;
 	MaxDynamicDebris = 0;
-	dayz_maxLocalZombies = 15;
+	dayz_maxLocalZombies = 10;
 	dayz_maxZeds = 250;
 	DZE_GodModeBase = {
 		(typeOf _this) in [
