@@ -124,7 +124,7 @@ if (!isDedicated) then {
 //Start Dynamic Weather
 
 //>MODIFIED CODE: weather
-execVM "overwrites\DynamicWeatherEffects.sqf";
+//execVM "overwrites\DynamicWeatherEffects.sqf";
 //<MODIFIED CODE: weather
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
