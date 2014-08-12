@@ -43,7 +43,7 @@ if (isServer) then {
                         if (!_keep) then {
                             _nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
                             if (_nearby==0) then {
-                                deleteVehicle _x;
+                                _x call purge;
                                 sleep 0.025;
                                 _countCleaned = _countCleaned + 1;
                             };
