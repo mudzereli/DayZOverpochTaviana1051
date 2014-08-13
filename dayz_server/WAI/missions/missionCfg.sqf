@@ -15,7 +15,6 @@ wai_missions = [
 "weapon_cache",
 "mayors_mansion",
 "convoy",
-"C130_crash",
 "ems_cache",
 "medi_camp",
 "Ural"
