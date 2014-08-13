@@ -253,22 +253,22 @@ if (isServer && isNil "sm_done") then {
 					{
 						if((_object distance [_x select 0,_x select 1,(getPosATL _object) select 2]) < 50) then {
 							//_object setVehicleLock "UNLOCKED";
-					        //_object enableSimulation false;
-					        //_object removeAllMPEventHandlers "mpkilled";
-					        //_object removeAllMPEventHandlers "mphit";
-					        //_object removeAllMPEventHandlers "mprespawn";
-					        //_object removeAllEventHandlers "FiredNear";
-					        //_object removeAllEventHandlers "HandleDamage";
-					        //_object removeAllEventHandlers "Killed";
-					        //_object removeAllEventHandlers "Fired";
-					        //_object removeAllEventHandlers "GetOut";
-					        //_object removeAllEventHandlers "GetIn";
-					        //_object removeAllEventHandlers "Local";
-					        //clearVehicleInit _object;
-					        //deleteVehicle _object;
-					        //deleteGroup (group _object);
-					        //_object = nil;
-							//_totalvehicles = _totalvehicles - 1;
+					        _object enableSimulation false;
+					        _object removeAllMPEventHandlers "mpkilled";
+					        _object removeAllMPEventHandlers "mphit";
+					        _object removeAllMPEventHandlers "mprespawn";
+					        _object removeAllEventHandlers "FiredNear";
+					        _object removeAllEventHandlers "HandleDamage";
+					        _object removeAllEventHandlers "Killed";
+					        _object removeAllEventHandlers "Fired";
+					        _object removeAllEventHandlers "GetOut";
+					        _object removeAllEventHandlers "GetIn";
+					        _object removeAllEventHandlers "Local";
+					        clearVehicleInit _object;
+					        deleteVehicle _object;
+					        deleteGroup (group _object);
+					        _object = nil;
+							_totalvehicles = _totalvehicles - 1;
 						};
 					} forEach [
 						[11698.81,15210.121],	//	TraderCityLyepestok
