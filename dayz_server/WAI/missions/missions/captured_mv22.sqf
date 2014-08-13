@@ -69,7 +69,7 @@ while {_missiontimeout} do {
 
 if (_playerPresent) then {
 
-	[_veh,[_vehdir,_objPosition],_vehclass,true,"0"] call custom_publish;
+	//[_veh,[_vehdir,_objPosition],_vehclass,true,"0"] call custom_publish;
 
 	waitUntil
 	{

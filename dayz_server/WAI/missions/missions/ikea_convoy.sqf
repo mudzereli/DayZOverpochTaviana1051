@@ -90,9 +90,9 @@ while {_missiontimeout} do {
 };
 if (_playerPresent) then {
 
-	[_veh,[_vehdir,_objPosition],_vehclass,true,"0"] 		call custom_publish;
-	[_veh2,[_vehdir,_objPosition2],_vehclass2,true,"0"] 	call custom_publish;
-	[_veh3,[_vehdir,_objPosition3],_vehclass3,true,"0"] 	call custom_publish;
+	//[_veh,[_vehdir,_objPosition],_vehclass,true,"0"] 		call custom_publish;
+	//[_veh2,[_vehdir,_objPosition2],_vehclass2,true,"0"] 	call custom_publish;
+	//[_veh3,[_vehdir,_objPosition3],_vehclass3,true,"0"] 	call custom_publish;
 
 	waitUntil
 	{
