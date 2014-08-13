@@ -9,14 +9,17 @@
     sleep 10; //Wait in seconds before the credits start after player IS ingame
      
     DZE_SCROLLING_CREDITS = [
-        ["Welcome to",["Tac Ops Taviana Overpoch"],"#33b5e5"],
+        ["Welcome to",["TacOps - Taviana Overpoch"],"#33b5e5"],
         ["Admins",["Debo", "Triad", "Lucavi"],"#ff4444"],
-        ["Moderators",["Red","Dirty Old Man","webber","Taylor Swift"],"#ffbb33"],
-        ["Server Mods",["Fast Trading/Custom Traders", "Deployable Bike", "Self Bloodbag", "Missions/Supply Drops", "Tow/Lift", "Take Clothes", "Service Points", "Suicide", "Safe Zones", "and more!"],"#33b5e5"],
+        ["Moderators",["Red","Dirty Old Man","webber","Kaii","Taylor Swift","Morvistic"],"#ffbb33"],
+        ["Server Mods",["Gold Coins/Banking", "Deployable Bike", "Self Bloodbag", "Tow/Lift", "Suicide", "Safe Zones", "and more!"],"#33b5e5"],
         ["Website",["tacticaloperationsunit.enjin.com"],"#33b5e5"],
-        ["Special Thanks To",["all our donators"],"#33b5e5"],
-        ["Warning",["Changing clothes can cause strange character desync/glitches. This is a bug with Epoch 1.0.5.1 , not the server. We are looking into a fix.","Bases must be maintained every 14 days (free).","Vehicles parked in trader cities are unlocked at server restarts","Tier 2 bases (cinder) are indestructible."],"#ff4444"]
+        ["Teamspeak",["66.150.214.225", "Private Rooms Available"],"#33b5e5"],
+        ["Special Thanks To",["All of Our Donators!"],"#33b5e5"],
+        ["Warning",["Changing skins can cause character desync/glitches. This is a bug with Epoch 1.0.5.1 , not the server. We are looking into a fix."],"#ff4444"]
+        ["Warning",["Bases must be maintained every 14 days (free).", "Tier 2 bases (cinder) are indestructible.", "Vehicles parked in trader cities are unlocked at server restarts."],"#ff4444"]
     ];
+
     {
         sleep 2;
         _cat   = _x select 0;
