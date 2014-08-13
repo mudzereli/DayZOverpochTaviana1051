@@ -44,7 +44,7 @@ class VehicleParts {
 		class ItemFuelBarrel {
 			type = "magazine";
 			buy = 1800;
-			sell = 900;
+			sell = 300;
 		};
 		class ItemFuelBarrelEmpty {
 			type = "magazine";
