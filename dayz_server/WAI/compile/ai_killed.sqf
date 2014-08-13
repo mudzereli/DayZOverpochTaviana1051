@@ -1,7 +1,7 @@
 private ["_unit","_player","_humanity","_banditkills"];
-_unit = _this select 0;
-_player = _this select 1;
-_type = _this select 2;
+_unit 		= _this select 0;
+_player 	= _this select 1;
+_type 		= _this select 2;
 
 switch (_type) do {
 	case "ground" : {ai_ground_units = (ai_ground_units -1);};
@@ -11,6 +11,7 @@ switch (_type) do {
 };
 
 _unit setVariable ["killedat", time];
+
 if (isPlayer _player) then {
 	private ["_banditkills","_humanity"];
 	_humanity = _player getVariable["humanity",0];
