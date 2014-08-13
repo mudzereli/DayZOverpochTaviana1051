@@ -400,7 +400,7 @@ if (isServer && isNil "sm_done") then {
 	};
 	
 	//### BEGIN MODIFIED CODE: dzms
-	[] ExecVM "\z\addons\dayz_server\DZMS\DZMSInit.sqf";
+	[] ExecVM "\z\addons\dayz_server\WAI\init.sqf";
 	//### end MODIFIED CODE: dzms
 	allowConnection = true;	
 	sm_done = true;
