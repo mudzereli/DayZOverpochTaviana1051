@@ -115,7 +115,6 @@ if (isServer) then {
                 } forEach _seagulls;
                 diag_log text format["CLEANUP: Deleted %1 Seagulls out of %2",_countCleaned,_countTotal];
             };
-            sleep 3;
         };
     };
 };
