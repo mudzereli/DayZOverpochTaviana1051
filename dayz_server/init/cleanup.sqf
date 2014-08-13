@@ -44,7 +44,6 @@ if (isServer) then {
                             _nearby = {(isPlayer _x) and (alive _x)} count (_x nearEntities [["CAManBase","AllVehicles"], 130]);
                             if (_nearby==0) then {
                                 _x call purge;
-                                sleep 0.025;
                                 _countCleaned = _countCleaned + 1;
                             };
                         };
@@ -64,7 +63,6 @@ if (isServer) then {
                     if(!(isNull _x)) then {
                         if (local _x) then {
                             _x call purge;
-                            sleep 0.025;
                             _countCleaned = _countCleaned + 1;
                         } else {
                             if (!alive _x) then {
@@ -73,7 +71,6 @@ if (isServer) then {
                                     _nearby = {(isPlayer _x) and (alive _x)} count (_pos nearEntities [["CAManBase","AllVehicles"], 130]);
                                     if (_nearby==0) then {
                                         _x call purge;
-                                        sleep 0.025;
                                         _countCleaned = _countCleaned + 1;
                                     };
                                 };
@@ -111,6 +108,7 @@ if (isServer) then {
                 _countCleaned = 0;
                 {
                     _x call purge;
+                    _countCleaned = _countCleaned + 1;
                     sleep 0.001;
                 } forEach _seagulls;
                 diag_log text format["CLEANUP: Deleted %1 Seagulls out of %2",_countCleaned,_countTotal];
