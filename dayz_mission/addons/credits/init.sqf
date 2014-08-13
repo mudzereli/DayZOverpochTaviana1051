@@ -17,7 +17,7 @@
         ["Teamspeak",["66.150.214.225", "Private Rooms Available"],"#33b5e5"],
         ["Special Thanks To",["All of Our Donators!"],"#33b5e5"],
         ["Warning",["Changing skins can cause character desync/glitches. This is a bug with Epoch 1.0.5.1 , not the server. We are looking into a fix."],"#ff4444"],
-        ["Warning",["Bases must be maintained every 14 days (free).", "Tier 2 bases (cinder) are indestructible.", "Vehicles parked in trader cities are DELETED at server restarts!","Mission vehicles do NOT save with server restarts!"],"#ff4444"]
+        ["Warning",["Bases must be maintained every 14 days (free).", "Tier 2 bases (cinder) are indestructible.", "Vehicles parked in trader cities are unlocked at server restarts!","Mission vehicles do NOT save with server restarts!"],"#ff4444"]
     ];
 
     {
