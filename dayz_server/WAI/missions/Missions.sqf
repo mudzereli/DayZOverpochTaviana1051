@@ -36,7 +36,7 @@ if(isServer) then {
 
 		} else {
 
-			sleep 60;
+			sleep 10;
 
 		};    
 	};
