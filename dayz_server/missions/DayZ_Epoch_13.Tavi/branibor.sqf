@@ -618,6 +618,7 @@ _vehicle_231 = objNull;
 if (true) then
 {
   _this = createVehicle ["MAP_A_CraneCon", [7371.7651, 4322.751, 7.6293945e-006], [], 0, "CAN_COLLIDE"];
+  _this enableSimulation false;
   _vehicle_231 = _this;
   _this setDir 107.42363;
   _this setPos [7371.7651, 4322.751, 7.6293945e-006];
