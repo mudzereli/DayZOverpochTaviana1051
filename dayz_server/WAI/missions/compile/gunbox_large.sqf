@@ -9,6 +9,12 @@ clearWeaponCargoGlobal _box;
 clearMagazineCargoGlobal _box;
 
 // RIFLES
+_box addWeaponCargoGlobal ["SCAR_H_STD_EGLM_Spect", 1];
+_box addWeaponCargoGlobal ["vil_PKP_EOT", 1];
+_box addWeaponCargoGlobal ["RH_sc2shd", 2];
+_box addWeaponCargoGlobal ["RH_ctar21glacog", 2];
+_box addWeaponCargoGlobal ["VIL_M110", 1];
+_box addWeaponCargoGlobal ["Mk_48_DZ", 1];
 _box addWeaponCargoGlobal ["G36A_camo", 1];
 _box addWeaponCargoGlobal ["DMR", 1];
 _box addWeaponCargoGlobal ["M14_EP1", 1];
@@ -22,6 +28,9 @@ _box addWeaponCargoGlobal ["M9SD", 1];
 _box addWeaponCargoGlobal ["UZI_SD_EP1", 1];
 
 // AMMUNITION
+_box addMagazineCargoGlobal ["100Rnd_762x51_M240", 10];
+_box addMagazineCargoGlobal ["20Rnd_762x51_B_SCAR", 15];
+_box addMagazineCargoGlobal ["100Rnd_762x54_PK", 10];
 _box addMagazineCargoGlobal ["30Rnd_556x45_G36", 10];
 _box addMagazineCargoGlobal ["20Rnd_762x51_DMR", 10];
 _box addMagazineCargoGlobal ["200Rnd_556x45_M249", 10];
