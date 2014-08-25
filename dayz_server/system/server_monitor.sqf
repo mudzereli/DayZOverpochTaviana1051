@@ -251,34 +251,23 @@ if (isServer && isNil "sm_done") then {
 					
 					//MODIFIED CODE>
 					{
-						if((_object distance [_x select 0,_x select 1,(getPosATL _object) select 2]) < 50) then {
-							_object setVehicleLock "UNLOCKED";
-					        //_object enableSimulation false;
-					        //_object removeAllMPEventHandlers "mpkilled";
-					        //_object removeAllMPEventHandlers "mphit";
-					        //_object removeAllMPEventHandlers "mprespawn";
-					        //_object removeAllEventHandlers "FiredNear";
-					        //_object removeAllEventHandlers "HandleDamage";
-					        //_object removeAllEventHandlers "Killed";
-					        //_object removeAllEventHandlers "Fired";
-					        //_object removeAllEventHandlers "GetOut";
-					        //_object removeAllEventHandlers "GetIn";
-					        //_object removeAllEventHandlers "Local";
-					        //clearVehicleInit _object;
-					        //deleteVehicle _object;
-					        //deleteGroup (group _object);
-					        //_object = nil;
-							//_totalvehicles = _totalvehicles - 1;
+						if(_pos distance _x) < 75) then {
+					        if (_damage > 0.1) then {
+					            _damage = 1;
+					            [_idKey,false,"SERVER"] call server_deleteObj;
+					            diag_log format["DELETING SAFEZONE VEHICLE: %1", [_idKey, _type]];
+					        };
+					        _ownerID = "0";
 						};
 					} forEach [
-						[11698.81,15210.121],	//	TraderCityLyepestok
-						[15309.663,9278.4912],	//	TraderCitySabina
-						[5538.7354,8762.2695],	//	TraderCityBilgrad 
-						[7376.6084,4296.5879],	//	TraderCityBranibor
-						[10948.426,654.90265],	//	BanditVendor
-						[15587.822,16394.049],	//	HeroVendor
-						[16555.732,10159.68],	//	AircraftDealer
-						[6815.0776,8534.1504]	//	AircraftDealer2
+						zonesabina,
+						zonelyep,
+						zonebilgrad,
+						zonebranibor,
+						zonekrasno,
+						zonedubovo,
+						zonewholesalesouth,
+						zonewholesalenorth
 					];
 					//<MODIFIED CODE
 
