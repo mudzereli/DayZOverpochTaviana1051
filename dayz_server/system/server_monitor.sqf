@@ -252,14 +252,15 @@ if (isServer && isNil "sm_done") then {
 					//MODIFIED CODE>
 					{
 						if((_pos distance _x) < 75) then {
-					        if (_damage > 0.1) then {
+					        if (true) then {
 					            _damage = 1;
 					            [_idKey,false,"SERVER"] call server_deleteObj;
 					            diag_log format["DELETING SAFEZONE VEHICLE: %1", [_idKey, _type]];
-					        };
-					        _ownerID = "0";
-							_object setVariable ["CharacterID", _ownerID, true];
-							_object setvehiclelock "UNLOCKED";
+					        } else {
+						        _ownerID = "0";
+								_object setVariable ["CharacterID", _ownerID, true];
+								_object setvehiclelock "UNLOCKED";
+						    };
 						};
 					} forEach [
 						zonesabina,
