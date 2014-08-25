@@ -259,6 +259,7 @@ if (isServer && isNil "sm_done") then {
 					        };
 					        _ownerID = "0";
 							_object setVariable ["CharacterID", _ownerID, true];
+							_object setvehiclelock "UNLOCKED";
 						};
 					} forEach [
 						zonesabina,
