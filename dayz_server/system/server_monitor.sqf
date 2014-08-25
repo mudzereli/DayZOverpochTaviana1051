@@ -258,6 +258,7 @@ if (isServer && isNil "sm_done") then {
 					            diag_log format["DELETING SAFEZONE VEHICLE: %1", [_idKey, _type]];
 					        };
 					        _ownerID = "0";
+							_object setVariable ["CharacterID", _ownerID, true];
 						};
 					} forEach [
 						zonesabina,
