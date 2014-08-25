@@ -1,1 +1,1 @@
-if(true) exitWith { cutText ["Skin Changing is DISABLED due to a bug in 1.6.3 that can cause your character to glitch out in many ways. This bug exists on ALL 1.0.5.1/1.63 Epoch servers!" , "PLAIN DOWN"]; };
+if(true) exitWith { cutText ["Skin Changing is DISABLED due to a bug in 1.63 that can cause your character to glitch out in many ways. This bug exists on ALL 1.0.5.1/1.63 Epoch servers!" , "PLAIN DOWN"]; };
