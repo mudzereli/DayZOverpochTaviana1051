@@ -735,6 +735,7 @@ dayz_removePlayerOnDisconnect = {
 	};
 };
 
+//>MODIFIED CODE: fix glare
 server_timeSync = {
     //Send request
     private ["_hour","_minute","_date","_key","_result","_outcome"];
@@ -753,6 +754,7 @@ server_timeSync = {
 	    diag_log ("TIME SYNC: Local Time set to " + str(_date));	
     };
 };
+//<MODIFIED CODE: fix glare
 
 // must spawn these 
 server_spawncleanDead = {
