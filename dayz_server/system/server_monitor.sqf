@@ -251,7 +251,7 @@ if (isServer && isNil "sm_done") then {
 					
 					//MODIFIED CODE>
 					{
-						if(_pos distance _x) < 75) then {
+						if((_pos distance _x) < 75) then {
 					        if (_damage > 0.1) then {
 					            _damage = 1;
 					            [_idKey,false,"SERVER"] call server_deleteObj;
