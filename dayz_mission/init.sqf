@@ -164,7 +164,7 @@ zombie_generate = compile preprocessFileLineNumbers "overwrites\loot\zombie_gene
 fnc_usec_selfActions = compile preprocessFileLineNumbers "overwrites\fn_selfActions.sqf";
 
 // wear clothes
-player_wearClothes = compile preprocessFileLineNumbers "overwrites\player_wearClothes.sqf";
+//player_wearClothes = compile preprocessFileLineNumbers "overwrites\player_wearClothes.sqf";
 
 // service point
 if(!isServer) then {execVM "addons\service_point\service_point.sqf";};
