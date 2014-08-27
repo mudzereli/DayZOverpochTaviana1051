@@ -1,4 +1,4 @@
-#include "AH.sqf"
+[] execVM "\z\addons\dayz_server\init\AH.sqf";
 
 waituntil {!isnil "bis_fnc_init"};
 
