@@ -923,5 +923,5 @@ server_logUnlockLockEvent = {
 };
 
 //>MODIFIED CODE: cleanup
-#include "cleanup.sqf"
+//#include "cleanup.sqf"
 //<MODIFIED CODE: cleanup

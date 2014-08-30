@@ -146,7 +146,7 @@ call compile preprocessFileLineNumbers "overwrites\fast_trading\init.sqf";
 call compile preprocessFileLineNumbers "addons\safezones\init.sqf";
 
 // delete unused parachutes
-call compile preprocessFileLineNumbers "addons\antipara\init.sqf";
+//call compile preprocessFileLineNumbers "addons\antipara\init.sqf";
 
 // scrolling credits
 call compile preprocessFileLineNumbers "addons\credits\init.sqf";
@@ -154,22 +154,24 @@ call compile preprocessFileLineNumbers "addons\credits\init.sqf";
 // economy
 call compile preprocessFileLineNumbers "eco\client_init.sqf";
 
-// overwrite unlock door to knockout
-player_unlockDoor = compile preprocessFileLineNumbers "overwrites\knockout\player_unlockDoor.sqf";
-
-// fix zombies not spawning with loot
-zombie_generate = compile preprocessFileLineNumbers "overwrites\loot\zombie_generate.sqf";
-
-// self actions
-fnc_usec_selfActions = compile preprocessFileLineNumbers "overwrites\fn_selfActions.sqf";
-
-// wear clothes
-//player_wearClothes = compile preprocessFileLineNumbers "overwrites\player_wearClothes.sqf";
-
-// service point
-if(!isServer) then {execVM "addons\service_point\service_point.sqf";};
-
 // towing
 execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
+
+if(!isServer) then {
+	// overwrite unlock door to knockout
+	player_unlockDoor = compile preprocessFileLineNumbers "overwrites\knockout\player_unlockDoor.sqf";
+
+	// fix zombies not spawning with loot
+	zombie_generate = compile preprocessFileLineNumbers "overwrites\loot\zombie_generate.sqf";
+
+	// self actions
+	fnc_usec_selfActions = compile preprocessFileLineNumbers "overwrites\fn_selfActions.sqf";
+
+	// wear clothes
+	//player_wearClothes = compile preprocessFileLineNumbers "overwrites\player_wearClothes.sqf";
+
+	// service point
+	execVM "addons\service_point\service_point.sqf";
+};
 
 //### END MODIFIED CODE: addons
