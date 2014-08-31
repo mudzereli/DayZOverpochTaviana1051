@@ -38,7 +38,7 @@ if (!_parachuteWest && !(locked _object)) then {
 if (_isNotOk && _isbuildable) exitWith {  };
 
 // delete if still not ok
-if (_isNotOk) exitWith { deleteVehicle _object; diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",typeOf _object,_object_position select 0,_object_position select 1, _object_position select 2]); };
+//if (_isNotOk) exitWith { deleteVehicle _object; diag_log(format["Deleting object %1 with invalid ID at pos [%2,%3,%4]",typeOf _object,_object_position select 0,_object_position select 1, _object_position select 2]); };
 
 
 _lastUpdate = _object getVariable ["lastUpdate",time];
